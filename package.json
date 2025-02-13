@@ -28,8 +28,5 @@
   },
   "engines": {
     "node": ">=16"
-  },
-  "engines": {
-    "node": ">=16"
   }
 }
