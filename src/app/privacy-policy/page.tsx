@@ -36,55 +36,43 @@ const PrivacyPolicy = () => {
 
           <div className="w-full px-4">
             {privacyPolicyData.map((section, index) => (
-              <div key={index} className="mb-6">
-                {/* <h2 className="text-2xl font-semibold text-secondary mb-2">
-                  {section.title}
-                </h2>
-                <div className="text-lg text-gray-700">
-                  {section.content.map((item, idx) => (
-                    <p key={idx} className="flex items-start mb-4">
-                      <span className="mr-3 text-secondary rounded-full">
-                        &#10003;
-                      </span>
-                      <span className="text-text-color">{item}</span>
-                    </p>
-                  ))}
-                </div> */}
+              <div key={index} className="mb-6 flex justify-center">
+                <div className="w-full border-b-2 border-gray-200 p-4">
+                  {/* Accordion Header */}
+                  <div
+                    className="cursor-pointer text-xl text-secondary mb-2 flex items-center justify-between"
+                    onClick={() => toggleAccordion(index)}
+                  >
+                    {section.title}
+                    <span
+                      className={`transform transition-transform ${
+                        openIndex === index ? "rotate-180" : ""
+                      }`}
+                    >
+                      {/* &#9660; */}
+                      {openIndex === index ? (
+                        <span>&#45;</span>
+                      ) : (
+                        <span>&#43;</span>
+                      )}
+                    </span>
+                  </div>
 
-                {/* Accordion Header */}
-                <div
-                  className="cursor-pointer text-xl text-secondary mb-2 flex items-center justify-between"
-                  onClick={() => toggleAccordion(index)}
-                >
-                  {section.title}
-                  <span
-                    className={`transform transition-transform ${
-                      openIndex === index ? "rotate-180" : ""
+                  {/* Accordion Body */}
+                  <div
+                    className={`text-lg text-gray-700 overflow-hidden transition-all duration-300 ${
+                      openIndex === index ? "max-h-screen" : "max-h-0"
                     }`}
                   >
-                    {/* &#9660; */}
-                    {openIndex === index ? (
-                      <span>&#45;</span>
-                    ) : (
-                      <span>&#43;</span>
-                    )}
-                  </span>
-                </div>
-
-                {/* Accordion Body */}
-                <div
-                  className={`text-lg text-gray-700 overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? "max-h-screen" : "max-h-0"
-                  }`}
-                >
-                  {section.content.map((item, idx) => (
-                    <p key={idx} className="flex items-start mb-4">
-                      <span className="mr-3 text-secondary rounded-full">
-                        &#10003;
-                      </span>
-                      <span className="text-text-color">{item}</span>
-                    </p>
-                  ))}
+                    {section.content.map((item, idx) => (
+                      <p key={idx} className="flex items-start mb-4">
+                        <span className="mr-3 text-secondary rounded-full">
+                          &#10003;
+                        </span>
+                        <span className="text-text-color">{item}</span>
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
@@ -97,23 +85,18 @@ const PrivacyPolicy = () => {
 
 export default PrivacyPolicy;
 
-/* <div className="w-full px-4">
-            {privacyPolicyData.map((section, index) => (
-              <div key={index} className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+{
+  /* <h2 className="text-2xl font-semibold text-secondary mb-2">
                   {section.title}
                 </h2>
                 <div className="text-lg text-gray-700">
-                  {section.content.length > 1 ? (
-                    <ul className="list-inside list-disc pl-4">
-                      {section.content.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p>{section.content[0]}</p>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div> */
+                  {section.content.map((item, idx) => (
+                    <p key={idx} className="flex items-start mb-4">
+                      <span className="mr-3 text-secondary rounded-full">
+                        &#10003;
+                      </span>
+                      <span className="text-text-color">{item}</span>
+                    </p>
+                  ))}
+                </div> */
+}
