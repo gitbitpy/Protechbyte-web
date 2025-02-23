@@ -7,7 +7,7 @@ const Brands = () => {
   return (
     <section className="bg-white dark:bg-gray-dark pt-16">
       <div className="container">
-        <h2 className="mb-4 text-3xl font-bold text-center !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <h2 className="mb-4 text-3xl font-bold text-center !leading-tight text-primary dark:text-white sm:text-4xl md:text-[45px]">
           Certified and Trusted by
         </h2>
 

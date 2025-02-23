@@ -22,7 +22,7 @@ const WhyUs = () => {
         {/* <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
           {checkIcon}
         </span> */}
-        <span className="text-lg font-bold text-heading-color">{heading}</span>
+        <span className="text-lg font-bold text-secondary">{heading}</span>
       </p>
       <p className="text-base text-text-color">{description}</p>
     </div>
@@ -37,7 +37,7 @@ const WhyUs = () => {
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap justify-between items-start">
             <div className="w-full px-4 lg:w-1/2">
-              <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-heading-color dark:text-white sm:text-4xl md:text-[45px]">
+              <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-[45px]">
                 Why ProtechByte
               </h2>
               <p

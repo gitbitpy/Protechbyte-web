@@ -27,8 +27,8 @@ const ContactPage = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-1/2 px-4">
-              <h1 className="mb-5 text-3xl font-bold leading-tight text-heading-color dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                Catch Us in the Cloud Contact PROTECHBYTE
+              <h1 className="mb-5 text-3xl font-bold leading-tight text-primary dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                Catch Us in the Cloud! Contact Protechbyte
               </h1>
               <p className="mb-12 text-base !leading-relaxed text-text-color dark:text-body-color-dark sm:text-lg md:text-xl">
                 With us, you're not just a client; you're a partner in success.
@@ -50,7 +50,7 @@ const ContactPage = () => {
                   </svg>
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-1 text-xl font-bold text-heading-color dark:text-white">
+                  <h4 className="mb-1 text-xl font-bold text-secondary dark:text-white">
                     Our Location
                   </h4>
                   <p className="text-base text-text-color dark:text-dark-6">
@@ -90,7 +90,7 @@ const ContactPage = () => {
                   </svg>
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-1 text-xl font-bold text-heading-color  dark:text-white">
+                  <h4 className="mb-1 text-xl font-bold text-secondary  dark:text-white">
                     Phone Number
                   </h4>
                   <p className="text-base text-text-color dark:text-dark-6">
@@ -115,7 +115,7 @@ const ContactPage = () => {
                   </svg>
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                  <h4 className="mb-1 text-xl font-bold text-secondary dark:text-white">
                     Email Address
                   </h4>
                   <p className="text-base text-body-color dark:text-dark-6">

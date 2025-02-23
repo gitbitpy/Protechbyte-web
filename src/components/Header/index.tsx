@@ -63,14 +63,6 @@ const Header = () => {
                   height={30}
                   className="w-full"
                 />
-                {/* <Image
-                  src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
-                /> */}
-                {/* ProtechByte */}
               </Link>
             </div>
             <div className="flex items-center justify-between px-4">
