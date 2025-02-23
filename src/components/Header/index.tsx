@@ -43,7 +43,7 @@ const Header = () => {
       <header
         className={`header left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
+            ? "bg-white dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
             : "absolute bg-transparent"
         }`}
       >
@@ -53,16 +53,16 @@ const Header = () => {
               <Link
                 href="/"
                 className={`header-logo block w-full text-primary text-2xl font-bold ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
+                  sticky ? "py-5 lg:py-3" : "py-3"
                 } `}
               >
-                {/* <Image
-                  src="/images/logo/logo-2.svg"
+                <Image
+                  src="/images/Protechbyte-Main-Logo.svg"
                   alt="logo"
                   width={140}
                   height={30}
-                  className="w-full dark:hidden"
-                /> */}
+                  className="w-full"
+                />
                 {/* <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
@@ -70,7 +70,7 @@ const Header = () => {
                   height={30}
                   className="hidden w-full dark:block"
                 /> */}
-                ProtechByte
+                {/* ProtechByte */}
               </Link>
             </div>
             <div className="flex items-center justify-between px-4">
@@ -113,8 +113,8 @@ const Header = () => {
                             href={menuItem.path}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
-                                ? "text-primary dark:text-white"
-                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                                ? "text-secondary dark:text-white"
+                                : "text-primary hover:text-secondary dark:text-white/70 dark:hover:text-white"
                             }`}
                           >
                             {menuItem.title}
@@ -123,7 +123,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="flex cursor-pointer items-center justify-between py-2 text-base text-primary group-hover:text-secondary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -149,7 +149,7 @@ const Header = () => {
                                     href={
                                       submenuItem.path ? submenuItem.path : ""
                                     }
-                                    className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
+                                    className="block rounded py-2.5 text-sm text-primary hover:text-secondary dark:text-white/70 dark:hover:text-white lg:px-3"
                                   >
                                     {submenuItem.title}
                                   </Link>

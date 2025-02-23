@@ -12,33 +12,32 @@ module.exports = {
 
     screens: {
       xs: "450px",
-      // => @media (min-width: 450px) { ... }
-
       sm: "575px",
-      // => @media (min-width: 576px) { ... }
-
       md: "768px",
-      // => @media (min-width: 768px) { ... }
-
       lg: "992px",
-      // => @media (min-width: 992px) { ... }
-
       xl: "1200px",
-      // => @media (min-width: 1200px) { ... }
-
       "2xl": "1400px",
-      // => @media (min-width: 1400px) { ... }
     },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        // background: "var(--background)",
+        // foreground: "var(--foreground)",
         current: "currentColor",
         transparent: "transparent",
-        white: "#FFFFFF",
-        black: "#121723",
+        // white: "#FFFFFF",
+        // black: "#121723",
         dark: "#1D2430",
-        primary: "#4A6CF7",
+        // primary: "#4A6CF7",
+
+        // colors variables
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        "bg-color": "var(--bg-color)",
+        "heading-color": "var(--heading-color)",
+        "text-color": "var(--text-color)",
+        white: "var(--white)",
+        black: "var(--black)",
+        // ------------------
         yellow: "#FBB040",
         "bg-color-dark": "#171C28",
         "body-color": {

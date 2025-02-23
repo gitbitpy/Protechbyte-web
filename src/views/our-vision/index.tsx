@@ -19,17 +19,27 @@ const OurVision = () => {
   );
 
   return (
-    <section id="about" className="bg-white dark:bg-gray-dark pt-16 md:pt-20 lg:pt-28">
+    <section
+      id="about"
+      className="bg-bg-color dark:bg-gray-dark pt-16 md:pt-20 lg:pt-28"
+    >
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
+          <div className="-mx-4 flex flex-wrap justify-between items-start">
             <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="Our Vision"
-                paragraph="Our mission is to revolutionize the IT landscape for our clients, enabling them to achieve unparalleled success through technology. We strive to be the trusted advisors, problem solvers, and catalysts for growth in an ever evolving digital world."
-                mb="44px"
-              />
-
+              <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-heading-color dark:text-white sm:text-4xl md:text-[45px]">
+                Our Vision
+              </h2>
+              <p
+                className="text-base !leading-relaxed text-text-color md:text-lg"
+                style={{ marginBottom: "44px" }}
+              >
+                Our mission is to revolutionize the IT landscape for our
+                clients, enabling them to achieve unparalleled success through
+                technology. We strive to be the trusted advisors, problem
+                solvers, and catalysts for growth in an ever evolving digital
+                world.
+              </p>
               <div
                 className="mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"

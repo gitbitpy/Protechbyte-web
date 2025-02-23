@@ -27,10 +27,10 @@ const ContactPage = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-1/2 px-4">
-              <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+              <h1 className="mb-5 text-3xl font-bold leading-tight text-heading-color dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                 Catch Us in the Cloud Contact PROTECHBYTE
               </h1>
-              <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+              <p className="mb-12 text-base !leading-relaxed text-text-color dark:text-body-color-dark sm:text-lg md:text-xl">
                 With us, you're not just a client; you're a partner in success.
                 Let's elevate your business together.
               </p>
@@ -50,10 +50,10 @@ const ContactPage = () => {
                   </svg>
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                  <h4 className="mb-1 text-xl font-bold text-heading-color dark:text-white">
                     Our Location
                   </h4>
-                  <p className="text-base text-body-color dark:text-dark-6">
+                  <p className="text-base text-text-color dark:text-dark-6">
                     410, J2 Block, Johar Town, Lahore
                   </p>
                 </div>
@@ -68,7 +68,7 @@ const ContactPage = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g clip-path="url(#clip0_941_17577)">
+                    <g clipPath="url(#clip0_941_17577)">
                       <path
                         d="M24.3 31.1499C22.95 31.1499 21.4 30.7999 19.7 30.1499C16.3 28.7999 12.55 26.1999 9.19997 22.8499C5.84997 19.4999 3.24997 15.7499 1.89997 12.2999C0.39997 8.59994 0.54997 5.54994 2.29997 3.84994C2.34997 3.79994 2.44997 3.74994 2.49997 3.69994L6.69997 1.19994C7.74997 0.599942 9.09997 0.899942 9.79997 1.89994L12.75 6.29994C13.45 7.34994 13.15 8.74994 12.15 9.44994L10.35 10.6999C11.65 12.7999 15.35 17.9499 21.25 21.6499L22.35 20.0499C23.2 18.8499 24.55 18.4999 25.65 19.2499L30.05 22.1999C31.05 22.8999 31.35 24.2499 30.75 25.2999L28.25 29.4999C28.2 29.5999 28.15 29.6499 28.1 29.6999C27.2 30.6499 25.9 31.1499 24.3 31.1499ZM3.79997 5.54994C2.84997 6.59994 2.89997 8.74994 3.99997 11.4999C5.24997 14.6499 7.64997 18.0999 10.8 21.2499C13.9 24.3499 17.4 26.7499 20.5 27.9999C23.2 29.0999 25.35 29.1499 26.45 28.1999L28.85 24.0999C28.85 24.0499 28.85 24.0499 28.85 23.9999L24.45 21.0499C24.45 21.0499 24.35 21.0999 24.25 21.2499L23.15 22.8499C22.45 23.8499 21.1 24.1499 20.1 23.4999C13.8 19.5999 9.89997 14.1499 8.49997 11.9499C7.84997 10.8999 8.09997 9.54994 9.09997 8.84994L10.9 7.59994V7.54994L7.94997 3.14994C7.94997 3.09994 7.89997 3.09994 7.84997 3.14994L3.79997 5.54994Z"
                         fill="currentColor"
@@ -90,10 +90,10 @@ const ContactPage = () => {
                   </svg>
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                  <h4 className="mb-1 text-xl font-bold text-heading-color  dark:text-white">
                     Phone Number
                   </h4>
-                  <p className="text-base text-body-color dark:text-dark-6">
+                  <p className="text-base text-text-color dark:text-dark-6">
                     +92-339-0111106
                   </p>
                 </div>
@@ -127,7 +127,7 @@ const ContactPage = () => {
           </div>
 
           <div className="relative -mx-4 flex flex-wrap items-center pt-16 md:pt-20 lg:pt-28">
-            <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full max-w-[570px] mx-auto text-center mb-[100px]">
               <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
                 Drop Us a Line
               </h2>
@@ -143,73 +143,125 @@ const ContactPage = () => {
               </p>
             </div>
 
-            <div className="w-full px-4 lg:w-1/2">
-              <div className="mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
+            <div className="w-full px-4">
+              {/* <div className="mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"> */}
+              <div className="mx-auto max-w-4xl p-28 shadow-2xl rounded-lg bg-transparent border border-secondary">
                 <form>
                   <div className="-mx-4 flex flex-wrap">
-                    <div className="w-full px-4">
-                      <div className="mb-8">
-                        <label
-                          htmlFor="name"
-                          className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                        >
-                          Your Name
-                        </label>
+                    <div className="w-full px-4 lg:w-1/2">
+                      <div className="relative z-0 mb-10">
                         <input
                           type="text"
-                          placeholder="Enter your name"
-                          className="w-full rounded-lg border bg-[#f8f8f8] px-6 py-4 text-base text-body-color outline-none focus:border-primary focus:ring-2 focus:ring-primary transition duration-300 ease-in-out dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:focus:border-primary dark:focus:ring-2 dark:focus:ring-primary"
+                          id="firstName"
+                          className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                          placeholder=""
                         />
+                        <label
+                          htmlFor="firstName"
+                          className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 left-0 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
+                        >
+                          First Name
+                        </label>
                       </div>
                     </div>
-                    <div className="w-full px-4">
-                      <div className="mb-8">
+                    <div className="w-full px-4 lg:w-1/2">
+                      <div className="relative z-0 mb-10">
+                        <input
+                          type="text"
+                          id="lastName"
+                          className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                          placeholder=""
+                        />
                         <label
-                          htmlFor="email"
-                          className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                          htmlFor="lastName"
+                          className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 left-0 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
                         >
-                          Your Email
+                          Last Name
                         </label>
+                      </div>
+                    </div>
+                    <div className="w-full px-4 lg:w-1/2">
+                      <div className="relative z-0 mb-8">
                         <input
                           type="email"
-                          placeholder="Enter your email"
-                          className="w-full rounded-lg border bg-[#f8f8f8] px-6 py-4 text-base text-body-color outline-none focus:border-primary focus:ring-2 focus:ring-primary transition duration-300 ease-in-out dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:focus:border-primary dark:focus:ring-2 dark:focus:ring-primary"
+                          id="email"
+                          className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                          placeholder=""
                         />
+                        <label
+                          htmlFor="email"
+                          className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 left-0 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
+                        >
+                          Email
+                        </label>
                       </div>
                     </div>
-                    <div className="w-full px-4">
-                      <div className="mb-8">
+                    <div className="w-full px-4 lg:w-1/2">
+                      <div className="relative z-0 mb-10">
+                        <input
+                          type="tel"
+                          id="phone"
+                          className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                          placeholder=""
+                        />
                         <label
                           htmlFor="phone"
-                          className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                          className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 left-0 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
                         >
                           Phone
                         </label>
+                      </div>
+                    </div>
+                    <div className="w-full px-4 lg:w-1/2">
+                      <div className="relative z-0 mb-10">
                         <input
                           type="text"
-                          placeholder="Enter your Phone"
-                          className="w-full rounded-lg border bg-[#f8f8f8] px-6 py-4 text-base text-body-color outline-none focus:border-primary focus:ring-2 focus:ring-primary transition duration-300 ease-in-out dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:focus:border-primary dark:focus:ring-2 dark:focus:ring-primary"
+                          id="companySize"
+                          className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                          placeholder=""
                         />
+                        <label
+                          htmlFor="companySize"
+                          className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 left-0 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
+                        >
+                          Company Size
+                        </label>
+                      </div>
+                    </div>
+                    <div className="w-full px-4 lg:w-1/2">
+                      <div className="relative z-0 mb-10">
+                        <input
+                          type="text"
+                          id="inquiry"
+                          className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                          placeholder=""
+                        />
+                        <label
+                          htmlFor="inquiry"
+                          className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 left-0 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
+                        >
+                          Inquiry Type
+                        </label>
                       </div>
                     </div>
                     <div className="w-full px-4">
-                      <div className="mb-8">
+                      <div className="relative z-0 mb-10">
+                        <textarea
+                          rows={2}
+                          id="detailsAndRequirements"
+                          className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                          placeholder=""
+                        />
                         <label
-                          htmlFor="message"
-                          className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                          htmlFor="detailsAndRequirements"
+                          className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 left-0 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
                         >
                           Details/Requirements
                         </label>
-                        <textarea
-                          name="message"
-                          rows={3}
-                          placeholder="Enter here"
-                          className="w-full rounded-lg border bg-[#f8f8f8] px-6 py-4 text-base text-body-color outline-none focus:border-primary focus:ring-2 focus:ring-primary transition duration-300 ease-in-out resize-none dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:focus:border-primary dark:focus:ring-2 dark:focus:ring-primary"
-                        ></textarea>
                       </div>
                     </div>
                     <div className="w-full px-4">
-                      <button className="w-full md:w-auto rounded-lg bg-primary px-9 py-4 text-base font-medium text-white shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:bg-primary/90 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50">
+                      <button className="w-full rounded-full bg-primary px-9 py-4 text-base font-medium text-white shadow-md transition-all duration-300 ease-in-out transform hover:bg-secondary hover:shadow-lg hover:bg-primary/90 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50">
                         Submit
                       </button>
                     </div>

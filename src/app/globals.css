@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,38 +23,48 @@
 } */
 
 @layer base {
+  /* :root { */
+  /* --background: #ffffff; */
+  /* --foreground: #46cf07; */
+
+  /* light mode colors */
+  /* --primary: #383c93; */
+  /* --secondary: #43a756; */
+  /* --bg-color-light: #ffffff; */
+  /* --heading-color-light: #212121; */
+  /* --heading-color-light: #272727; */
+  /* --text-color-light: #777777; */
+  /* ------------------------- */
+  /* dark mode colors */
+  /* --bg-color-dark: #171c28; */
+  /* ------------------------- */
+  /* --yellow: #fbb040; */
+  /* --body-color-default: #788293; */
+  /* --body-color-dark: #959cb1; */
+  /* --stroke-light: #e3e8ef; */
+  /* --stroke-dark: #353943; */
+  /* --gray-light: #f0f2f9; */
+  /* --gray-dark: #1e232e; */
+  /* --black: #121723; */
+  /* --white: #ffffff; */
+  /* } */
+
   :root {
-    --background: #ffffff;
-    --foreground: #46cf07;
-    --primary: #4a6cf7;
-    --yellow: #fbb040;
-    --bg-color-dark: #171c28;
-    --body-color-default: #788293;
-    --body-color-dark: #959cb1;
-    --stroke-light: #e3e8ef;
-    --stroke-dark: #353943;
-    --gray-light: #f0f2f9;
-    --gray-dark: #1e232e;
-    --black: #121723;
+    --primary: #383c93;
+    --secondary: #43a756;
+    --bg-color: #ffffff;
+    --heading-color: #2b2b2b;
+    --text-color: #777777;
     --white: #ffffff;
+    --black: #121723;
   }
 
-  /* :root {
-    --primary-bg-color: white;
-    --secondary-bg-color: lightgray;
-    --primary-text-color: black;
-    --secondary-text-color: gray;
-    --button-bg-color: blue;
-    --button-text-color: white;
-  } */
-
   .dark {
-    --primary-bg-color: black;
-    --secondary-bg-color: darkgray;
-    --primary-text-color: white;
-    --secondary-text-color: lightgray;
-    --button-bg-color: darkblue;
-    --button-text-color: yellow;
+    --primary: #383c93;
+    --secondary: #43a756;
+    --bg-color: #171c28;
+    --heading-color: #dfdfdf;
+    --text-color: #bebebe;
   }
 
   body {

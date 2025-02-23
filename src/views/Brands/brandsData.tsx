@@ -5,7 +5,7 @@ const brandsData: Brand[] = [
     id: 6,
     name: "VeeAM",
     href: "https://formbold.com",
-    image: "/images/brands/formbold.svg",
+    image: "/images/brands/cisco-logo-transparent.webp",
     imageLight: "/images/brands/formbold-light.svg",
   },
   {
