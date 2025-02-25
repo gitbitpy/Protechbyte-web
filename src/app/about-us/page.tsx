@@ -5,6 +5,8 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 import HomeHeroBtn from "@/components/custom-ui-components/home-hero-Button/HomeHeroBtn";
 import Image from "next/image";
+import testimonialsData from "@/data/testimonialsData";
+import SingleTestimonial from "./SingleTestimonial";
 
 export const metadata: Metadata = {
   title: "About Page | Free Next.js Template for Startup and SaaS",
@@ -19,14 +21,13 @@ const AboutPage = () => {
       className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
     >
       <div className="container">
-
         {/* "Hero Section" */}
         <div className="-mx-4 flex flex-wrap">
           <div className="w-1/2 px-4">
-            <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+            <h1 className="mb-5 text-3xl font-bold leading-tight text-primary dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
               Discover Protechbyte Where Innovation Meets Expertise
             </h1>
-            <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+            <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-sm md:text-lg">
               We're here to propel your business forward!
             </p>
             <div className="flex justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -37,13 +38,13 @@ const AboutPage = () => {
         </div>
 
         {/* <AboutSectionOne /> */}
-        <div className="-mx-4 flex flex-wrap items-center pt-16 md:pt-20 lg:pt-28">
+        <div className="-mx-4 flex flex-wrap items-start pt-16 md:pt-20 lg:pt-28">
           <div className="w-full px-4 lg:w-1/2">
-            <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+            <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-5xl">
               Who Are WE
             </h2>
             <p
-              className="text-base !leading-relaxed text-body-color md:text-lg"
+              className="text-base !leading-relaxed text-body-color md:text-md"
               style={{ marginBottom: "44px" }}
             >
               We are the architects of innovation, the stewards of technology,
@@ -52,15 +53,15 @@ const AboutPage = () => {
               helping them thrive in the digital age.
             </p>
             <p
-              className="text-base !leading-relaxed text-body-color md:text-lg"
+              className="text-base !leading-relaxed text-body-color md:text-md"
               style={{ marginBottom: "44px" }}
             >
-              ProTechByte Consulting is a
-              dynamic and forward-thinking IT services company that specializes
-              in delivering tailored solutions to a diverse range of clients.
-              With a team of passionate technologists, strategists, and
-              innovators, we work tirelessly to transform challenges into
-              opportunities and aspirations into achievements.
+              ProTechByte Consulting is a dynamic and forward-thinking IT
+              services company that specializes in delivering tailored solutions
+              to a diverse range of clients. With a team of passionate
+              technologists, strategists, and innovators, we work tirelessly to
+              transform challenges into opportunities and aspirations into
+              achievements.
             </p>
           </div>
 
@@ -104,35 +105,45 @@ const AboutPage = () => {
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            <div className="max-w-[470px]">
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
-              </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
-                </p>
-              </div>
-            </div>
+            <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-5xl">
+              Our Commitment
+            </h2>
+            <p
+              className="text-base !leading-relaxed text-body-color md:text-md"
+              style={{ marginBottom: "44px" }}
+            >
+              We are committed to empowering businesses to thrive in the digital
+              age. We view challenges as opportunities and strive to exceed
+              expectations with every project. Our success is measured by the
+              success of our clients, and we are dedicated to delivering value,
+              innovation, and excellence in all that we do.
+            </p>
+          </div>
+        </div>
+
+        <div className="-mx-4 flex flex-wrap items-center pt-16 md:pt-20 lg:pt-28">
+          <div className="w-full mx-auto px-4 lg:w-1/2">
+            <h2 className="mb-4 text-3xl text-center font-bold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-[45px]">
+              What Our Users say
+            </h2>
+            <p
+              className="text-base text-center !leading-relaxed text-text-color md:text-lg"
+              style={{ marginBottom: "44px" }}
+            >
+              Our seasoned team of technical support specialists has been
+              instrumental in driving the success of businesses like yours for
+              many years. With a track record of excellence and enduring client
+              relationships, we stand ready to elevate your operations to new
+              heights.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+            {testimonialsData.map((testimonial) => (
+              <SingleTestimonial
+                key={testimonial.id}
+                testimonial={testimonial}
+              />
+            ))}
           </div>
         </div>
       </div>
