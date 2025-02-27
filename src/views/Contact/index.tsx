@@ -33,7 +33,7 @@ const Contact = () => {
             <div className="w-full flex justify-center flex-wrap gap-32 mb-12">
               {/* Phone Section */}
               <div className="flex flex-col items-center justify-center gap-4 space-x-4">
-                <div className="w-32 h-32 flex items-center justify-center bg-primary bg-opacity-20 text-white rounded-full">
+                <div className="w-32 h-32 flex items-center justify-center bg-secondary bg-opacity-20 text-white rounded-full">
                   <GiRotaryPhone className="text-5xl" />
                 </div>
                 <div className="flex flex-col justify-center item-center">
@@ -48,7 +48,7 @@ const Contact = () => {
 
               {/* Email Section */}
               <div className="flex flex-col items-center justify-center gap-4 space-x-4">
-                <div className="w-32 h-32 flex items-center justify-center bg-primary bg-opacity-20 text-white rounded-full">
+                <div className="w-32 h-32 flex items-center justify-center bg-secondary bg-opacity-20 text-white rounded-full">
                   <MdEmail className="text-5xl" />
                 </div>
                 <div className="flex flex-col justify-center item-center">

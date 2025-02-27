@@ -110,7 +110,7 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-10 text-xl font-bold text-secondary dark:text-white">
                   Useful Links
                 </h2>
                 <ul>
@@ -144,7 +144,7 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-10 text-xl font-bold text-secondary dark:text-white">
                   Terms
                 </h2>
                 <ul>
@@ -178,7 +178,7 @@ const Footer = () => {
 
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-10 text-xl font-bold text-secondary dark:text-white">
                   Support & Help
                 </h2>
                 <ul>
@@ -212,30 +212,21 @@ const Footer = () => {
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-          <div className="py-8">
-            <p className="text-center text-base text-body-color dark:text-white">
-              Template by{" "}
-              <a
-                href="http://uideck.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
+          <div className="py-8 flex justify-between items-center">
+            <div className="text-center text-base text-body-color dark:text-white">
+              © 2023 PROTECHBYTE
+            </div>
+            <div className="text-center text-base text-body-color dark:text-white">
+              <Link
+                href="/privacy-policy"
+                className="flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
               >
-                UIdeck
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://nextjstemplates.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Next.js Templates
-              </a>
-            </p>
+                Privacy Policy
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="absolute right-0 top-14 z-[-1]">
+        {/* <div className="absolute right-0 top-14 z-[-1]">
           <svg
             width="55"
             height="99"
@@ -308,7 +299,7 @@ const Footer = () => {
               </radialGradient>
             </defs>
           </svg>
-        </div>
+        </div> */}
         <div className="absolute bottom-24 left-0 z-[-1]">
           <svg
             width="79"
