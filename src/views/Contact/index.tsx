@@ -15,17 +15,32 @@ const Contact = () => {
         <div className="-mx-4 flex flex-wrap">
           {/* <div className="w-full px-4 lg:w-7/12 xl:w-8/12"> */}
           <div className="w-full px-4">
+            <div className="w-full mx-auto px-4 lg:w-1/2 flex justify-center flex-wrap mb-12">
+              <h2 className="mb-4 text-3xl text-center font-bold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-[45px]">
+                Let's CONNECT
+              </h2>
+              <p
+                className="text-base text-center !leading-relaxed text-text-color md:text-lg"
+                style={{ marginBottom: "44px" }}
+              >
+                Ready to take your cloud computing and IT solutions to the next
+                level? Connect with us today and let's embark on a journey of
+                innovation and growth together. Reach out for a consultation and
+                discover how Protechbyte can transform your business.
+              </p>
+            </div>
+
             <div className="w-full flex justify-center flex-wrap gap-32 mb-12">
               {/* Phone Section */}
               <div className="flex flex-col items-center justify-center gap-4 space-x-4">
                 <div className="w-32 h-32 flex items-center justify-center bg-primary bg-opacity-20 text-white rounded-full">
                   <GiRotaryPhone className="text-5xl" />
                 </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
+                <div className="flex flex-col justify-center item-center">
+                  <h4 className="text-lg text-center text-secondary font-semibold text-gray-800 dark:text-white">
                     Phone Number
                   </h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                  <p className="text-sm text-center text-gray-600 dark:text-gray-300">
                     +1 587-589-3798
                   </p>
                 </div>
@@ -36,107 +51,15 @@ const Contact = () => {
                 <div className="w-32 h-32 flex items-center justify-center bg-primary bg-opacity-20 text-white rounded-full">
                   <MdEmail className="text-5xl" />
                 </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
+                <div className="flex flex-col justify-center item-center">
+                  <h4 className="text-lg text-center text-secondary font-semibold text-gray-800 dark:text-white">
                     Email Address
                   </h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                  <p className="text-sm text-center text-gray-600 dark:text-gray-300">
                     connect@protechbyte.com
                   </p>
                 </div>
               </div>
-            </div>
-
-            <div
-              className="mb-12 rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
-              data-wow-delay=".15s
-              "
-            >
-              {/* <h2 className="mb-3 text-2xl font-bold text-center text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                Let's CONNECT
-              </h2>
-              <p className="mb-12 text-base font-medium text-body-color">
-                Ready to take your cloud computing and IT solutions to the next
-                level? Connect with us today and let's embark on a journey of
-                innovation and growth together. Reach out for a consultation and
-                discover how Protechbyte can transform your business.
-              </p> */}
-
-              <SectionTitle
-                title="Let's CONNECT"
-                paragraph="Ready to take your cloud computing and IT solutions to the next
-                level? Connect with us today and let's embark on a journey of
-                innovation and growth together. Reach out for a consultation and
-                discover how Protechbyte can transform your business."
-                center
-              />
-
-              <form>
-                <div className="-mx-4 flex flex-wrap">
-                  {/* Name Section */}
-                  <div className="w-full px-4 md:w-1/2">
-                    <div className="mb-8">
-                      <label
-                        htmlFor="name"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                      >
-                        Your Name
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="Enter your name"
-                        className="w-full rounded-lg border bg-[#f8f8f8] px-6 py-4 text-base text-body-color outline-none focus:border-primary focus:ring-2 focus:ring-primary transition duration-300 ease-in-out dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:focus:border-primary dark:focus:ring-2 dark:focus:ring-primary"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Email Section */}
-                  <div className="w-full px-4 md:w-1/2">
-                    <div className="mb-8">
-                      <label
-                        htmlFor="email"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                      >
-                        Your Email
-                      </label>
-                      <input
-                        type="email"
-                        placeholder="Enter your email"
-                        className="w-full rounded-lg border bg-[#f8f8f8] px-6 py-4 text-base text-body-color outline-none focus:border-primary focus:ring-2 focus:ring-primary transition duration-300 ease-in-out dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:focus:border-primary dark:focus:ring-2 dark:focus:ring-primary"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Message Section */}
-                  <div className="w-full px-4">
-                    <div className="mb-8">
-                      <label
-                        htmlFor="message"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                      >
-                        Your Message
-                      </label>
-                      <textarea
-                        name="message"
-                        rows={5}
-                        placeholder="Enter your message"
-                        className="w-full rounded-lg border bg-[#f8f8f8] px-6 py-4 text-base text-body-color outline-none focus:border-primary focus:ring-2 focus:ring-primary transition duration-300 ease-in-out resize-none dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:focus:border-primary dark:focus:ring-2 dark:focus:ring-primary"
-                      ></textarea>
-                    </div>
-                  </div>
-
-                  {/* Submit Button */}
-                  <div className="w-full px-4">
-                    {/* <button className="w-full md:w-auto rounded-lg bg-primary px-9 py-4 text-base font-medium text-white shadow-md transition duration-300 ease-in-out hover:bg-primary/90 dark:shadow-md-dark focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50">
-                      Submit Ticket
-                    </button> */}
-
-                    <button className="w-full md:w-auto rounded-lg bg-primary px-9 py-4 text-base font-medium text-white shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:bg-primary/90 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </form>
             </div>
           </div>
           {/* <div className="w-full px-4 lg:w-5/12 xl:w-4/12">

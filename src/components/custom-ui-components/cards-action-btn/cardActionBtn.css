@@ -24,7 +24,7 @@
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #282936;
+  background: var(--secondary);
   border-radius: 1.625rem;
 }
 
@@ -52,6 +52,7 @@
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
+  object-fit: contain;
   border-top: 0.125rem solid #fff;
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);

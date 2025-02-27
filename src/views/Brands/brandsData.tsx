@@ -3,17 +3,24 @@ import { Brand } from "@/types/brand";
 const brandsData: Brand[] = [
   {
     id: 1,
-    name: "VeeAM",
+    name: "Microsoft",
     href: "https://formbold.com",
-    image: "/images/brands/cisco-logo-transparent.webp",
-    imageLight: "/images/brands/formbold-light.svg",
+    image: "/images/brands/microsoft-logo.svg",
+    imageLight: "/images/brands/microsoft-logo.svg",
   },
   {
     id: 2,
     name: "VeeAM",
     href: "https://formbold.com",
-    image: "/images/brands/microsoft-logo.webp",
-    imageLight: "/images/brands/formbold-light.svg",
+    image: "/images/brands/veeam-logo.svg",
+    imageLight: "/images/brands/veeam-logo.svg",
+  },
+  {
+    id: 3,
+    name: "VMware",
+    href: "https://formbold.com",
+    image: "/images/brands/vmware-logo.svg",
+    imageLight: "/images/brands/vmware-logo.svg",
   },
   // {
   //   id: 1,
