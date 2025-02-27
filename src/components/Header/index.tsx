@@ -103,10 +103,10 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                            className={`flex py-2 text-base font-semibold lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
                                 ? "text-secondary dark:text-white"
-                                : "text-primary hover:text-secondary dark:text-white/70 dark:hover:text-white"
+                                : "text-primary hover:text-secondary dark:text-secondary dark:hover:text-white"
                             }`}
                           >
                             {menuItem.title}
@@ -115,7 +115,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-primary group-hover:text-secondary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="flex cursor-pointer items-center justify-between py-2 text-base text-primary font-semibold group-hover:text-secondary dark:text-secondary dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -141,7 +141,7 @@ const Header = () => {
                                     href={
                                       submenuItem.path ? submenuItem.path : ""
                                     }
-                                    className="block rounded py-2.5 text-sm text-primary hover:text-secondary dark:text-white/70 dark:hover:text-white lg:px-3"
+                                    className="block rounded py-2.5 text-sm text-primary font-semibold  hover:text-secondary dark:text-secondary dark:hover:text-white lg:px-3"
                                   >
                                     {submenuItem.title}
                                   </Link>

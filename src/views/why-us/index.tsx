@@ -34,7 +34,7 @@ const WhyUs = () => {
       className="bg-white dark:bg-gray-dark pt-16 md:pt-20 lg:pt-28"
     >
       <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+        <div className="pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap justify-between items-start">
             <div className="w-full px-4 lg:w-1/2">
               <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-[45px]">
