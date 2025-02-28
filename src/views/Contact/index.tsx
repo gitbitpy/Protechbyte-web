@@ -1,3 +1,6 @@
+"use client"
+
+import { useEffect, useState } from "react";
 import SectionTitle from "@/components/Common/SectionTitle";
 import NewsLatterBox from "./NewsLatterBox";
 import { GiRotaryPhone } from "react-icons/gi";
@@ -5,7 +8,15 @@ import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   // const theme = localStorage.getItem("theme");
-  const theme = "dark";
+  // const theme = "dark";
+  const [theme, setTheme] = useState<"dark" | "light">("light"); // Default to "light"
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark" || savedTheme === "light") {
+      setTheme(savedTheme);
+    }
+  }, []);
   return (
     <section
       id="contact"

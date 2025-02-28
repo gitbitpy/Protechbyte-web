@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-bg-color pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="relative z-10 overflow-hidden bg-bg-color pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px] min-h-screen"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -39,6 +39,13 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        <div className="absolute w-full left-0 top-0 z-[-1] opacity-50">
+          <img
+            src="/home-hero-image2.svg"
+            alt=""
+            className="w-full h-full object-cover opacity-50"
+          />
+        </div>
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
@@ -53,7 +60,7 @@ const Hero = () => {
               r="225"
               fill="url(#paint0_linear_25:217)"
             /> */}
-            <circle
+            {/* <circle
               cx="17.9997"
               cy="182"
               r="18"
@@ -72,7 +79,7 @@ const Hero = () => {
               cy="288"
               r="34"
               fill="url(#paint2_radial_25:217)"
-            />
+            /> */}
             {/* <circle
               cx="325.486"
               cy="302.87"
@@ -80,7 +87,7 @@ const Hero = () => {
               transform="rotate(-37.6852 325.486 302.87)"
               fill="url(#paint3_linear_25:217)"
             /> */}
-            <circle
+            {/* <circle
               opacity="0.45"
               cx="184.521"
               cy="315.521"
@@ -95,7 +102,7 @@ const Hero = () => {
               r="179.5"
               transform="rotate(-30 356 290)"
               stroke="url(#paint5_linear_25:217)"
-            />
+            /> */}
             {/* <circle
               opacity="0.8"
               cx="191.659"
@@ -104,7 +111,7 @@ const Hero = () => {
               transform="rotate(133.319 191.659 302.659)"
               fill="url(#paint6_linear_25:217)"
             /> */}
-            <defs>
+            {/* <defs>
               <linearGradient
                 id="paint0_linear_25:217"
                 x1="-54.5003"
@@ -198,10 +205,10 @@ const Hero = () => {
                 <stop stopColor="var(--secondary)" />
                 <stop offset="1" stopColor="var(--secondary)" stopOpacity="0" />
               </linearGradient>
-            </defs>
+            </defs> */}
           </svg>
         </div>
-        <div className="absolute left-0 top-0 z-[-1] opacity-30 lg:opacity-100">
+        {/* <div className="absolute left-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="800"
             height="556"
@@ -229,15 +236,15 @@ const Hero = () => {
               cy="288"
               r="34"
               fill="url(#paint2_radial_25:217)"
-            />
-            {/* <circle
+            /> */}
+        {/* <circle
               opacity="0.8"
               cx="450"
               cy="400"
               r="150"
               fill="url(#paint3_radial_25:217)"
             /> */}
-            <defs>
+        {/* <defs>
               <linearGradient
                 id="paint0_linear_25:217"
                 x1="-54.5003"
@@ -307,8 +314,8 @@ const Hero = () => {
               </radialGradient>
             </defs>
           </svg>
-        </div>
-        <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
+        </div> */}
+        {/* <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="364"
             height="201"
@@ -418,7 +425,7 @@ const Hero = () => {
               </radialGradient>
             </defs>
           </svg>
-        </div>
+        </div> */}
       </section>
     </>
   );

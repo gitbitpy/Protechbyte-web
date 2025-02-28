@@ -13,7 +13,7 @@ const brandsData: Brand[] = [
     name: "VeeAM",
     href: "https://formbold.com",
     image: "/images/brands/veeam-logo.svg",
-    imageLight: "/images/brands/veeam-logo.svg",
+    imageLight:  "/images/brands/veeam-logo.svg",
   },
   {
     id: 3,
@@ -22,6 +22,10 @@ const brandsData: Brand[] = [
     image: "/images/brands/vmware-logo.svg",
     imageLight: "/images/brands/vmware-logo.svg",
   },
+];
+
+export default brandsData;
+
   // {
   //   id: 1,
   //   name: "Microsoft",
@@ -57,6 +61,3 @@ const brandsData: Brand[] = [
   //   image: "/images/brands/plainadmin.svg",
   //   imageLight: "/images/brands/plainadmin-light.svg",
   // },
-];
-
-export default brandsData;
