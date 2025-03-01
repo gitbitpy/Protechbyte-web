@@ -184,19 +184,3 @@ const PrivacyPolicy = () => {
 };
 
 export default PrivacyPolicy;
-
-{
-  /* <h2 className="text-2xl font-semibold text-secondary mb-2">
-                  {section.title}
-                </h2>
-                <div className="text-lg text-gray-700">
-                  {section.content.map((item, idx) => (
-                    <p key={idx} className="flex items-start mb-4">
-                      <span className="mr-3 text-secondary rounded-full">
-                        &#10003;
-                      </span>
-                      <span className="text-text-color">{item}</span>
-                    </p>
-                  ))}
-                </div> */
-}

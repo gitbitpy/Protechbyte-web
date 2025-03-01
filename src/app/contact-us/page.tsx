@@ -25,8 +25,8 @@ const ContactPage = () => {
                 Catch Us in the Cloud! Contact Protechbyte
               </h1>
               <p className="mb-12 text-base !leading-relaxed text-text-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                With us, you're not just a client; you're a partner in success.
-                Let's elevate your business together.
+                With us, you are not just a client; you're a partner in success.
+                Let&apos;s elevate your business together.
               </p>
               <div className="mb-8 flex w-full max-w-[370px]">
                 <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -132,7 +132,7 @@ const ContactPage = () => {
                 Whether you have questions, need technical support, or want to
                 explore how our cloud solutions can benefit your business, we're
                 here to help. Reach out to us using the information below and
-                let's start a conversation about taking your operations to new
+                let&apos;s start a conversation about taking your operations to new
                 heights with Protechbyte.
               </p>
             </div>

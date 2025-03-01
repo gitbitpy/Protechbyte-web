@@ -34,8 +34,6 @@ const ThemeToggler = () => {
   return (
     <button
       aria-label="theme toggler"
-      // onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      // aria-pressed={theme === "dark" ? "true" : "false"}
       onClick={toggleTheme}
       className={`flex items-center justify-center rounded-full cursor-pointer h-9 w-9 md:h-12 md:w-12 ${
         isDarkMode ? "bg-secondary" : "text-white bg-primary"

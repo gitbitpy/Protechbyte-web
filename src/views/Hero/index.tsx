@@ -1,4 +1,5 @@
 import HomeHeroBtn from "@/components/custom-ui-components/home-hero-Button/HomeHeroBtn";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -16,35 +17,40 @@ const Hero = () => {
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-text-color sm:text-lg md:text-xl">
                   With us, you're not just a client; you're a partner in
-                  success. Let's elevate your business together.
+                  success. Let&apos;s elevate your business together.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  {/* <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
-                    Let's Grow
-                  </Link> */}
                   <HomeHeroBtn title="Let's Grow" />
                   <HomeHeroBtn title="Explore" />
-                  {/* <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
-                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                    Explore
-                  </Link> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="absolute w-full left-0 top-0 z-[-1] opacity-50">
+        {/* <div className="absolute w-full left-0 top-0 z-[-1] opacity-50">
           <img
             src="/home-hero-image2.svg"
             alt=""
             className="w-full h-full object-cover opacity-50"
           />
-        </div>
+          <Image
+            src="/home-hero-image2.svg"
+            alt="Hero background"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
+        </div> */}
+
+        <div
+          className="absolute w-full left-0 top-0 z-[-1] opacity-50"
+          style={{
+            backgroundImage: 'url("/home-hero-image2.svg")',
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            height: "100%",
+          }}
+        />
       </section>
     </>
   );

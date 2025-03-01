@@ -24,14 +24,14 @@ const Contact = () => {;
           <div className="w-full px-4">
             <div className="w-full mx-auto px-4 lg:w-1/2 flex justify-center flex-wrap mb-12">
               <h2 className="mb-4 text-3xl text-center font-bold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-[45px]">
-                Let's CONNECT
+              Let&apos;s CONNECT
               </h2>
               <p
                 className="text-base text-center !leading-relaxed text-text-color md:text-lg"
                 style={{ marginBottom: "44px" }}
               >
                 Ready to take your cloud computing and IT solutions to the next
-                level? Connect with us today and let's embark on a journey of
+                level? Connect with us today and let&apos;s embark on a journey of
                 innovation and growth together. Reach out for a consultation and
                 discover how Protechbyte can transform your business.
               </p>

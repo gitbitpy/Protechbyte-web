@@ -24,7 +24,7 @@ const AboutPage = () => {
               Discover Protechbyte Where Innovation Meets Expertise
             </h1>
             <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-sm md:text-lg">
-              We're here to propel your business forward!
+              We are here to propel your business forward!
             </p>
             <div className="flex justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
               <HomeHeroBtn title="Let's Grow" />
@@ -33,7 +33,6 @@ const AboutPage = () => {
           </div>
         </div>
 
-        {/* <AboutSectionOne /> */}
         <div className="-mx-4 flex flex-wrap items-start pt-16 md:pt-20 lg:pt-28">
           <div className="w-full px-4 lg:w-1/2">
             <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-5xl">
@@ -79,7 +78,6 @@ const AboutPage = () => {
           </div>
         </div>
 
-        {/* <AboutSectionTwo /> */}
         <div className="-mx-4 flex flex-wrap items-center pt-16 md:pt-20 lg:pt-28">
           <div className="w-full px-4 lg:w-1/2">
             <div
