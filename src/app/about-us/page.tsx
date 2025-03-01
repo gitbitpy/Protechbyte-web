@@ -1,7 +1,3 @@
-import AboutSectionOne from "@/views/About/AboutSectionOne";
-import AboutSectionTwo from "@/views/About/AboutSectionTwo";
-import Breadcrumb from "@/components/Common/Breadcrumb";
-
 import { Metadata } from "next";
 import HomeHeroBtn from "@/components/custom-ui-components/home-hero-Button/HomeHeroBtn";
 import Image from "next/image";

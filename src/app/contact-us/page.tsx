@@ -1,10 +1,5 @@
 "use client";
 
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import Contact from "@/views/Contact";
-
-import { Metadata } from "next";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 // export const metadata: Metadata = {
@@ -17,7 +12,6 @@ const ContactPage = () => {
   const [theme, setTheme] = useState<string | null>(null);
 
   useEffect(() => {
-    // This code will only run on the client-side
     const savedTheme = localStorage.getItem("theme");
     setTheme(savedTheme);
   }, []);

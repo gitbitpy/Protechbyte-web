@@ -1,4 +1,3 @@
-// /app/services/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import servicesDetailData, { IServicesDetail } from "@/data/servicesDetailData";
 import HomeHeroBtn from "@/components/custom-ui-components/home-hero-Button/HomeHeroBtn";

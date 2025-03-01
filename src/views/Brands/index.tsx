@@ -1,7 +1,6 @@
 import { Brand } from "@/types/brand";
 import Image from "next/image";
 import brandsData from "./brandsData";
-import SectionTitle from "@/components/Common/SectionTitle";
 
 const Brands = () => {
   return (

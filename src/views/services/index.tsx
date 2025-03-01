@@ -1,6 +1,4 @@
-import SectionTitle from "@/components/Common/SectionTitle";
 import SingleService from "./SingleService";
-// import serviceData from "./serviceData";
 import servicesCardData from "@/data/servicesCardData";
 
 const Services = () => {

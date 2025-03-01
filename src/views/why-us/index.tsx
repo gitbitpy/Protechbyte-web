@@ -1,5 +1,3 @@
-import Image from "next/image";
-import SectionTitle from "@/components/Common/SectionTitle";
 import CardActionBtn from "@/components/custom-ui-components/cards-action-btn/CardActionBtn";
 import whyUsData from "@/data/whyUsData";
 

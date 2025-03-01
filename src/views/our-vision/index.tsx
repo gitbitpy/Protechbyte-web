@@ -1,5 +1,4 @@
 import Image from "next/image";
-import SectionTitle from "@/components/Common/SectionTitle";
 import CardActionBtn from "@/components/custom-ui-components/cards-action-btn/CardActionBtn";
 
 const checkIcon = (
@@ -45,19 +44,6 @@ const OurVision = () => {
                 className="mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"
               >
-                {/* <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
-                  </div>
-                </div> */}
                 <CardActionBtn title="Know about us" />
               </div>
             </div>
