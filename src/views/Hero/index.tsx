@@ -1,5 +1,4 @@
 import HomeHeroBtn from "@/components/custom-ui-components/home-hero-Button/HomeHeroBtn";
-import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -16,7 +15,7 @@ const Hero = () => {
                   Catalyzing Growth Through Cloud Excellence
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-text-color sm:text-lg md:text-xl">
-                  With us, you're not just a client; you're a partner in
+                  With us, you&apos;re not just a client; you&apos;re a partner in
                   success. Let&apos;s elevate your business together.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
