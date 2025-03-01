@@ -74,6 +74,22 @@
     font-family: "Montserrat", sans-serif;
   }
 
+  .card-border {
+    position: absolute;
+    inset: 0px;
+    border: 1px solid var(--secondary);
+    opacity: 0;
+    transform: rotate(10deg);
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .service-card:hover .card-border {
+    inset: 10px;
+    opacity: 0.5;
+    transform: rotate(0);
+  }
+
   ::-webkit-scrollbar {
     width: 6px;
   }
