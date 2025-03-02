@@ -3,6 +3,7 @@ import HomeHeroBtn from "@/components/custom-ui-components/home-hero-Button/Home
 import Image from "next/image";
 import testimonialsData from "@/data/testimonialsData";
 import SingleTestimonial from "./SingleTestimonial";
+import OurCommitmentImage from "@/assets/about-us/OurCommitmentImage";
 
 export const metadata: Metadata = {
   title: "About Page | Free Next.js Template for Startup and SaaS",
@@ -80,22 +81,8 @@ const AboutPage = () => {
 
         <div className="-mx-4 flex flex-wrap items-center pt-16 md:pt-20 lg:pt-28">
           <div className="w-full px-4 lg:w-1/2">
-            <div
-              className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
-              data-wow-delay=".15s"
-            >
-              <Image
-                src="/images/about/about-image-2.svg"
-                alt="about image"
-                fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none"
-              />
-              <Image
-                src="/images/about/about-image-2-dark.svg"
-                alt="about image"
-                fill
-                className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
-              />
+            <div className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0">
+              <OurCommitmentImage />
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
