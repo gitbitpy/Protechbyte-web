@@ -8,6 +8,7 @@ const ImportanceImage: React.FC = () => {
       height="640"
       viewBox="0 0 2425 1572"
       fill="none"
+      style={{ width: "512px" }}
     >
       <defs xmlns="http://www.w3.org/2000/svg">
         <linearGradient id="gradient-svg" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -21,7 +22,7 @@ const ImportanceImage: React.FC = () => {
           ></stop>
         </linearGradient>
       </defs>
-      <g clip-path="url(#clip0_1_2)">
+      <g clipPath="url(#clip0_1_2)">
         <path
           d="M2249.36 1436.75L1862.51 1518.13L1820.47 1247.68L2207.36 1166.3L2249.36 1436.75Z"
           fill="#C7C7C7"
@@ -323,50 +324,50 @@ const ImportanceImage: React.FC = () => {
         <path
           d="M1154.24 560.5V560.5C1154.24 564.642 1150.88 568 1146.74 568V568"
           stroke="#C7C7C7"
-          stroke-width="1.875"
-          stroke-miterlimit="10"
+          strokeWidth="1.875"
+          strokeMiterlimit="10"
         ></path>
         <path
           d="M1131.18 568H952.377"
           stroke="#C7C7C7"
-          stroke-width="1.875"
-          stroke-miterlimit="10"
+          strokeWidth="1.875"
+          strokeMiterlimit="10"
         ></path>
         <path
           d="M944.576 568V568C940.434 568 937.076 564.642 937.076 560.5V560.5"
           stroke="#C7C7C7"
-          stroke-width="1.875"
-          stroke-miterlimit="10"
+          strokeWidth="1.875"
+          strokeMiterlimit="10"
         ></path>
         <path
           d="M937.076 544.822V396.172"
           stroke="#C7C7C7"
-          stroke-width="1.875"
-          stroke-miterlimit="10"
+          strokeWidth="1.875"
+          strokeMiterlimit="10"
         ></path>
         <path
           d="M937.076 388.336V388.336C937.076 384.194 940.434 380.836 944.576 380.836V380.836"
           stroke="#C7C7C7"
-          stroke-width="1.875"
-          stroke-miterlimit="10"
+          strokeWidth="1.875"
+          strokeMiterlimit="10"
         ></path>
         <path
           d="M960.139 380.836H1138.98"
           stroke="#C7C7C7"
-          stroke-width="1.875"
-          stroke-miterlimit="10"
+          strokeWidth="1.875"
+          strokeMiterlimit="10"
         ></path>
         <path
           d="M1146.74 380.836V380.836C1150.88 380.836 1154.24 384.194 1154.24 388.336V388.336"
           stroke="#C7C7C7"
-          stroke-width="1.875"
-          stroke-miterlimit="10"
+          strokeWidth="1.875"
+          strokeMiterlimit="10"
         ></path>
         <path
           d="M1154.24 403.973V552.66"
           stroke="#C7C7C7"
-          stroke-width="1.875"
-          stroke-miterlimit="10"
+          strokeWidth="1.875"
+          strokeMiterlimit="10"
         ></path>
         <path
           d="M1826.37 1077.17C1820.49 1083.05 1812.51 1086.36 1804.19 1086.36H1481.37C1473.05 1086.36 1465.07 1083.05 1459.19 1077.17V1077.17C1453.31 1071.28 1450 1063.3 1450 1054.98V584.374C1450 576.053 1453.31 568.073 1459.19 562.189V562.189C1465.07 556.305 1473.05 553 1481.37 553H1804.19C1812.51 553 1820.49 556.305 1826.37 562.189V562.189C1832.26 568.073 1835.56 576.053 1835.56 584.374V1054.98C1835.56 1063.3 1832.26 1071.28 1826.37 1077.17V1077.17Z"
@@ -544,8 +545,8 @@ const ImportanceImage: React.FC = () => {
         <path
           d="M1915.66 1121.25V1246.87C1915.66 1255.15 1908.95 1261.86 1900.67 1261.86H1812.02"
           stroke="#263238"
-          stroke-width="22.5"
-          stroke-miterlimit="10"
+          strokeWidth="22.5"
+          strokeMiterlimit="10"
         ></path>
         <path
           d="M1792.05 1284.57L1782.1 1288.96H1709.67V1234.79H1782.1L1792.05 1239.19V1284.57Z"

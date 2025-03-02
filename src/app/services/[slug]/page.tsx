@@ -20,11 +20,11 @@ const ServicePage = async ({
     <div className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-1/2 px-4">
-            <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+          <div className="w-full px-4 lg:w-1/2">
+            <h1 className="mb-5 text-3xl font-bold leading-tight text-primary dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
               {serviceDetails?.section1.heading}
             </h1>
-            <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+            <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark md:text-md">
               {serviceDetails?.section1.description}
             </p>
             <div className="flex justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -32,12 +32,15 @@ const ServicePage = async ({
               <HomeHeroBtn title="Explore" />
             </div>
           </div>
+          <div className="w-full px-4 lg:w-1/2">
+            {serviceDetails.section1.sectionOneImage}
+          </div>
         </div>
 
         <div className="-mx-4 flex flex-wrap items-center pt-16 md:pt-20 lg:pt-28">
           <div className="w-full px-4 lg:w-1/2">
             <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
-              <Image
+              {/* <Image
                 src="/images/about/about-image.svg"
                 alt="about-image"
                 fill
@@ -48,19 +51,20 @@ const ServicePage = async ({
                 alt="about-image"
                 fill
                 className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
-              />
+              /> */}
+              {serviceDetails.section2.sectionTwoImage}
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+            <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-[45px]">
               {serviceDetails?.section2.heading}
             </h2>
             <div className="mt-4">
               <div className="mb-6">
-                <h3 className="text-xl font-semibold !leading-tight text-black dark:text-white">
+                <h3 className="text-xl font-semibold !leading-tight text-secondary dark:text-secondary">
                   {serviceDetails?.section2.subHeading1.title}
                 </h3>
-                <ul className="list-disc pl-6 text-black dark:text-white">
+                <ul className="list-disc pl-6 text-body-color dark:text-body-color-dark md:text-md">
                   {serviceDetails?.section2.subHeading1.list.map(
                     (item, index) => (
                       <li key={index} className="text-md">
@@ -71,10 +75,10 @@ const ServicePage = async ({
                 </ul>
               </div>
               <div className="mb-6">
-                <h3 className="text-xl font-semibold !leading-tight text-black dark:text-white">
+                <h3 className="text-xl font-semibold !leading-tight text-secondary dark:text-secondary">
                   {serviceDetails?.section2.subHeading2.title}
                 </h3>
-                <ul className="list-disc pl-6 text-black dark:text-white">
+                <ul className="list-disc pl-6 text-body-color dark:text-body-color-dark md:text-md">
                   {serviceDetails?.section2.subHeading2.list.map(
                     (item, index) => (
                       <li key={index} className="text-md">
@@ -90,16 +94,16 @@ const ServicePage = async ({
 
         <div className="-mx-4 flex flex-wrap items-center pt-16 md:pt-20 lg:pt-28">
           <div className="w-full px-4 lg:w-1/2">
-            <h2 className="text-2xl font-semibold mx-auto w-full !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+            <h2 className="text-2xl font-semibold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-[45px]">
               {serviceDetails?.section3.heading}
             </h2>
             <div className="mt-4">
               {serviceDetails?.section3.items.map((item, index) => (
                 <div key={index} className="mb-6">
-                  <h3 className="text-xl font-semibold text-black dark:text-white">
+                  <h3 className="text-xl font-semibold text-secondary dark:text-secondary">
                     {item.heading}
                   </h3>
-                  <p className="text-md text-black dark:text-white">
+                  <p className="text-base text-body-color dark:text-body-color-dark md:text-md">
                     {item.description}
                   </p>
                 </div>

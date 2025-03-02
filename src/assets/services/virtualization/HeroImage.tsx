@@ -287,7 +287,7 @@ const HeroImage: React.FC = () => {
         d="M288.18,80.41s-.74,5.28-2.66,6.12a5.31,5.31,0,0,1-3.88,0"
         fill="none"
         stroke="#c9c9c9"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
       ></path>
       <circle cx="281.59" cy="86.59" r="0.77" fill="#c9c9c9"></circle>
       <path

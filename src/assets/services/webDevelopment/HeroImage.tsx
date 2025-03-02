@@ -144,17 +144,17 @@ const HeroImage: React.FC = () => {
         points="288.24 202.33 280.44 209.91 288.24 217.5"
         fill="none"
         stroke="black"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
       ></polyline>
       <polyline
         points="305.11 202.33 312.91 209.91 305.11 217.5"
         fill="none"
         stroke="black"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
       ></polyline>
       <path
         d="M191.68,64.18S182.07,61.6,180,52.68c0,0,14.85-3.07,15.34,12.27Z"
@@ -180,9 +180,9 @@ const HeroImage: React.FC = () => {
         y2="217.5"
         fill="none"
         stroke="#a5a5a5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
       ></line>
       <rect
         x="104.69"
