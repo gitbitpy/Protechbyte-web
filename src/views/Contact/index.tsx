@@ -48,7 +48,7 @@ const Contact = () => {;
                     Phone Number
                   </h4>
                   <p className="text-sm text-center text-gray-600 dark:text-gray-300">
-                    +1 587-589-3798
+                    +92-339-0111106
                   </p>
                 </div>
               </div>
