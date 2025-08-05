@@ -1,7 +1,9 @@
 import { Testimonial } from "@/types/testimonial";
 import Image from "next/image";
-const starIcon = (
-  <svg width="18" height="16" viewBox="0 0 18 16" className="fill-current">
+import { FaQuoteLeft } from "react-icons/fa";
+
+const StarIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 18 16" className="fill-current">
     <path d="M9.09815 0.361679L11.1054 6.06601H17.601L12.3459 9.59149L14.3532 15.2958L9.09815 11.7703L3.84309 15.2958L5.85035 9.59149L0.595291 6.06601H7.0909L9.09815 0.361679Z" />
   </svg>
 );
@@ -9,31 +11,38 @@ const starIcon = (
 const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   const { star, name, image, content, designation } = testimonial;
 
-  const ratingIcons = [];
-  for (let index = 0; index < star; index++) {
-    ratingIcons.push(
-      <span key={index} className="text-yellow">
-        {starIcon}
-      </span>
-    );
-  }
-
   return (
     <div className="w-full">
-      <div className="rounded-sm bg-white p-8 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-5 xl:px-8">
-        <div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>
-        <p className="mb-8 border-b border-body-color border-opacity-10 pb-8 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-white">
-          &ldquo;{content}&rdquo;
+      <div className="relative group p-8 bg-white/80 dark:bg-gray-800/90 backdrop-blur-md rounded-2xl shadow-md hover:shadow-2xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
+        {/* Quote Icon */}
+        <FaQuoteLeft className="absolute top-6 left-6 text-blue-500 opacity-10 text-6xl" />
+
+        {/* Content */}
+        <p className="text-gray-700 dark:text-gray-200 text-base leading-relaxed italic z-10 relative mb-6">
+          “{content}”
         </p>
-        <div className="flex items-center">
-          <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
-            <Image src={image} alt={name} fill />
+
+        {/* Divider */}
+        <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mb-6" />
+
+        {/* Profile & Rating */}
+        <div className="flex items-center justify-between">
+          {/* Author Info */}
+          <div className="flex items-center">
+            <div className="relative w-12 h-12 rounded-full overflow-hidden border border-gray-200 dark:border-gray-600 mr-4">
+              <Image src={image} alt={name} fill className="object-cover" />
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-gray-800 dark:text-white">{name}</h4>
+              <p className="text-sm text-gray-500 dark:text-gray-400">{designation}</p>
+            </div>
           </div>
-          <div className="w-full">
-            <h3 className="mb-1 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
-              {name}
-            </h3>
-            <p className="text-sm text-body-color">{designation}</p>
+
+          {/* Star Rating */}
+          <div className="flex gap-1 text-yellow-400">
+            {Array.from({ length: star }).map((_, i) => (
+              <span key={i}><StarIcon /></span>
+            ))}
           </div>
         </div>
       </div>
