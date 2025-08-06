@@ -37,7 +37,7 @@ const Contact = () => {
                 <GiRotaryPhone className="text-3xl" />
               </div>
               <h4 className="text-xl font-semibold text-gray-900 dark:text-white mt-4">Phone</h4>
-              <p className="text-gray-600 dark:text-gray-300">+92-339-0111106</p>
+              <p className="text-gray-600 dark:text-gray-300">+15875893798</p>
             </div>
           </div>
 

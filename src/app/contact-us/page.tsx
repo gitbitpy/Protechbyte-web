@@ -124,7 +124,7 @@ const ContactPage = () => {
               </svg>
             }
             title="Our Location"
-            value="410, J2 Block, Johar Town, Lahore"
+            value="3416, 8 street, nw Edmonton Alberta" 
           />
           <ContactItem
             icon={
@@ -139,7 +139,7 @@ const ContactPage = () => {
               </svg>
             }
             title="Phone Number"
-            value="+92-339-0111106"
+            value="+15875893798"
           />
           <ContactItem
             icon={
