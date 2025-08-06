@@ -1,64 +1,75 @@
+"use client";
+
+import { FaCheckCircle } from "react-icons/fa";
 import CardActionBtn from "@/components/custom-ui-components/cards-action-btn/CardActionBtn";
 import whyUsData from "@/data/whyUsData";
 
 const WhyUs = () => {
-  const List = ({
+  const ListItem = ({
     heading,
     description,
+    icon,
   }: {
     heading: string;
     description: string;
+    icon?: React.ReactNode;
   }) => (
-    <div className="mb-5 flex flex-col">
-      <p className="flex items-center text-lg font-medium text-body-color mb-2">
-        <span className="text-lg font-bold text-secondary">{heading}</span>
-      </p>
-      <p className="text-base text-text-color">{description}</p>
+    <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 group relative overflow-hidden">
+      <div className="flex items-start gap-4">
+        <div className="min-w-[48px] h-12 w-12 flex items-center justify-center bg-primary/10 text-primary rounded-full text-xl group-hover:scale-110 transition-transform duration-300">
+          {icon || <FaCheckCircle />}
+        </div>
+        <div>
+          <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-1 group-hover:text-primary transition-colors duration-200">
+            {heading}
+          </h4>
+          <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+            {description}
+          </p>
+        </div>
+      </div>
+      <span className="absolute bottom-0 left-0 w-full h-[3px] bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 rounded-full" />
     </div>
   );
 
   return (
     <section
       id="about"
-      className="bg-white dark:bg-gray-dark pt-16 md:pt-20 lg:pt-28"
+      className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white dark:bg-gray-900"
     >
-      <div className="container">
-        <div className="pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap justify-between items-start">
-            <div className="w-full px-4 lg:w-1/2">
-              <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-[45px]">
-                Why ProtechByte
-              </h2>
-              <p
-                className="text-base !leading-relaxed text-text-color md:text-lg"
-                style={{ marginBottom: "44px" }}
-              >
-                Our mission is to revolutionize the IT landscape for our
-                clients, enabling them to achieve unparalleled success through
-                technology. We strive to be the trusted advisors, problem
-                solvers, and catalysts for growth in an ever evolving digital
-                world.
-              </p>
-              <div
-                className="mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <CardActionBtn title="Know about us" />
-              </div>
-            </div>
+      {/* Horizontal reverse gradient background */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
+      </div>
 
-            <div className="w-full px-4 lg:w-1/2">
-              <div className="relative mx-auto">
-                {whyUsData.map((item, index) => (
-                  <List
-                    key={index}
-                    heading={item.heading}
-                    description={item.description}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
+      <div className="max-w-6xl mx-auto relative z-10">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight">
+            Why Choose <span className="text-primary">ProtechByte</span>?
+            <span className="block h-[6px] mx-auto mt-2 bg-gradient-to-r from-primary to-purple-400 w-24 rounded-full"></span>
+          </h2>
+          <p className="text-base font-normal text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            We&apos;re not just a tech company — we&apos;re your strategic innovation
+            partner. Here&apos;s why businesses trust us to lead their digital
+            evolution.
+          </p>
+        </div>
+
+        {/* Feature Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16">
+          {whyUsData.map((item, index) => (
+            <ListItem
+              key={index}
+              heading={item.heading}
+              description={item.description}
+            />
+          ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="flex justify-center">
+          <CardActionBtn title="Know about us" />
         </div>
       </div>
     </section>

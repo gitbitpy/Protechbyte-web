@@ -3,25 +3,29 @@ import { Service } from "@/types/service";
 
 const SingleService = ({ service }: { service: Service }) => {
   const { icon, title, paragraph, urlLink } = service;
-  return (
-    <div className="h-full w-full group relative overflow-hidden rounded-lg bg-white dark:bg-dark shadow-lg hover:shadow-2xl transition-all duration-300 ease-out service-card">
-      <div className="card-border" />
-      <div className="p-6 h-full">
-        <div className="mb-8 inline-flex h-[70px] w-[70px] items-center justify-center rounded-lg bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
-          {icon}
-        </div>
-        <h3 className="mb-8 text-xl font-semibold text-dark dark:text-white transition-colors duration-300 group-hover:text-primary">
-          {title}
-        </h3>
-        <div className="min-h-28 mb-4 flex items-start">
-          <p className="text-base font-light leading-relaxed text-body-color overflow-y-auto">
-            {paragraph}
-          </p>
-        </div>
 
-        <CardActionBtn title="Learn More" urlLink={urlLink} />
+  return (
+    <div className="group relative h-full w-full rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-8 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+      {/* Icon Bubble */}
+      <div className="mb-6 flex items-center justify-center h-16 w-16 rounded-xl bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary-light transition-transform duration-300 group-hover:scale-105">
+        {icon}
       </div>
-      <div className="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full"></div>
+
+      {/* Title */}
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 group-hover:text-primary transition-colors duration-300">
+        {title}
+      </h3>
+
+      {/* Description */}
+      <p className="text-sm font-light text-gray-800 dark:text-gray-300 leading-relaxed mb-6 min-h-[88px]">
+        {paragraph}
+      </p>
+
+      {/* CTA Button */}
+      <CardActionBtn title="Learn More" urlLink={urlLink} />
+
+      {/* Elegant Border Hover Line */}
+      <span className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-primary to-purple-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 rounded-full" />
     </div>
   );
 };

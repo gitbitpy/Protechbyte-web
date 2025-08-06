@@ -62,7 +62,7 @@ const servicesCardData: Service[] = [
     ),
     title: "Digital Transformation",
     paragraph:
-      "Our Web Development services, where creativity meets functionality deliver outstanding online experiences.",
+      "Our Web Development services, where creativity meets functionality delivering outstanding online experiences.",
     urlLink: "services/web-development/",
   },
   {
@@ -94,7 +94,7 @@ const servicesCardData: Service[] = [
     ),
     title: "Cloud Migrations",
     paragraph:
-      "We specialize in streamlining cloud operations, ensuring your business operates at its best in the digital landscape through Seamless Cloud Solutions for Optimal Performance.",
+      "We specialize in streamlining cloud operations, ensuring your business operates at its best in the digital landscape.",
     urlLink: "services/cloud-managed-services/",
   },
   {
@@ -110,7 +110,7 @@ const servicesCardData: Service[] = [
     ),
     title: "Virtualization",
     paragraph:
-      "We specialize in streamlining cloud operations, ensuring your business operates at its best in the digital landscape through Seamless Cloud Solutions for Optimal Performance.",
+      "We specialize in streamlining cloud operations, ensuring your business operates at its best in the digital landscape.",
     urlLink: "services/virtualization/",
   },
   {
@@ -126,7 +126,7 @@ const servicesCardData: Service[] = [
     ),
     title: "Cybersecurity",
     paragraph:
-      "We specialize in streamlining cloud operations, ensuring your business operates at its best in the digital landscape through Seamless Cloud Solutions for Optimal Performance.",
+      "We specialize in streamlining cloud operations, ensuring your business operates at its best in the digital landscape.",
     urlLink: "services/server-administration/",
   },
 ];

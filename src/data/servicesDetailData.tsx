@@ -1,23 +1,12 @@
-import React from "react";
-import BackupAndDisasterRecoveryHeroImage from "../assets/services/backupAndDisasterRecovery/HeroImage";
-import BackupAndDisasterRecoveryImportanceImage from "../assets/services/backupAndDisasterRecovery/ImportanceImage";
-import CloudManageServicesHeroImage from "../assets/services/cloudManagedService/HeroImage";
-import CloudManageServicesImportanceImage from "../assets/services/cloudManagedService/ImportanceImage";
-import StorageSolutionsHeroImage from "../assets/services/storageSolutions/HeroImage";
-import VirtualizationHeroImage from "../assets/services/virtualization/HeroImage";
-import ServerAdministrationHeroImage from "../assets/services/serverAdministration/HeroImage";
-import ServerAdministrationImportanceImage from "../assets/services/serverAdministration/ImportanceImage";
-import WebDevelopmentHeroImage from "../assets/services/webDevelopment/HeroImage";
-
 export interface IServicesDetail {
   section1: {
     heading: string;
     description: string;
-    sectionOneImage: React.ReactElement;
+    sectionOneImage: string;
   };
   section2: {
     heading: string;
-    sectionTwoImage: React.ReactElement;
+    sectionTwoImage: string;
     subHeading1: {
       title: string;
       list: string[];
@@ -42,11 +31,11 @@ const servicesDetailData: Record<string, IServicesDetail> = {
       heading: "Robust Backup & Disaster Recovery Solutions",
       description:
         "We understand the critical importance of safeguarding your business data. Our Backup and Disaster Recovery solutions are designed to provide you with peace of mind, knowing that your data is secure and recoverable in any unforeseen event.",
-      sectionOneImage: <BackupAndDisasterRecoveryHeroImage />,
+      sectionOneImage: "/images/services/database-recovery/hero-img.svg",
     },
     section2: {
       heading: "Why it is Important",
-      sectionTwoImage: <BackupAndDisasterRecoveryImportanceImage />,
+      sectionTwoImage: "/images/services/database-recovery/hero-img.svg",
       subHeading1: {
         title: "Benefits of Backup and Disaster Recovery",
         list: [
@@ -97,11 +86,11 @@ const servicesDetailData: Record<string, IServicesDetail> = {
       heading: "Elevate Your Business with Managed cloud Services",
       description:
         "We specialize in streamlining cloud operations, ensuring your business operates at its best in the digital landscape through Seamless Cloud Solutions for Optimal Performance.",
-      sectionOneImage: <CloudManageServicesHeroImage />,
+      sectionOneImage: "/images/services/database-recovery/hero-img.svg",
     },
     section2: {
       heading: "Why it is Important",
-      sectionTwoImage: <CloudManageServicesImportanceImage />,
+      sectionTwoImage: "/images/services/database-recovery/hero-img.svg",
       subHeading1: {
         title: "Benefits of Managed Cloud Services",
         list: [
@@ -152,11 +141,11 @@ const servicesDetailData: Record<string, IServicesDetail> = {
       heading: "Unlocking Seamless Storage Solutions.Your Data, Our Expertise",
       description:
         "We understand that in today's digital age, efficient storage solutions are not just a convenience but a necessity. Whether you're a business looking to streamline your data management or an individual seeking smart ways to declutter your life, we've got you covered. Whether you're a business seeking scalable storage options or an individual looking to simplify your digital life, our website has the perfect storage solution for you. Browse our products, explore our resources, and make clutter a thing of the past.",
-      sectionOneImage: <StorageSolutionsHeroImage />,
+      sectionOneImage: "/images/services/database-recovery/hero-img.svg",
     },
     section2: {
       heading: "Why it is Important",
-      sectionTwoImage: <StorageSolutionsHeroImage />,
+      sectionTwoImage: "/images/services/database-recovery/hero-img.svg",
       subHeading1: {
         title: "Explore Our Range of Storage Solutions:",
         list: [
@@ -210,11 +199,11 @@ const servicesDetailData: Record<string, IServicesDetail> = {
       heading: "Virtualization Solutions. Transforming Your IT Infrastructure",
       description:
         "Experience the future of IT infrastructure with our Server Virtualization services powered by VMware and Hyper-V. In an era where flexibility, scalability, and cost-efficiency are paramount, virtualization is the key to unlocking the full potential of your server resources.",
-      sectionOneImage: <VirtualizationHeroImage />,
+      sectionOneImage: "/images/services/database-recovery/hero-img.svg",
     },
     section2: {
       heading: "Why it is Important",
-      sectionTwoImage: <VirtualizationHeroImage />,
+      sectionTwoImage: "/images/services/database-recovery/hero-img.svg",
       subHeading1: {
         title: "Our Virtualization Expertise:",
         list: [
@@ -267,11 +256,11 @@ const servicesDetailData: Record<string, IServicesDetail> = {
       heading: "Optimizing Your Digital Backbone With Excellence",
       description:
         "We specialize in maintaining the backbone of your digital infrastructure. In the fast-paced world of technology, your servers are the heart of your operations, and our expert team is here to ensure they beat reliably and efficiently.",
-      sectionOneImage: <ServerAdministrationHeroImage />,
+      sectionOneImage: "/images/services/database-recovery/hero-img.svg",
     },
     section2: {
       heading: "Why it is Important",
-      sectionTwoImage: <ServerAdministrationImportanceImage />,
+      sectionTwoImage: "/images/services/database-recovery/hero-img.svg",
       subHeading1: {
         title: "Explore Our Server Administration Expertise:",
         list: [
@@ -324,11 +313,11 @@ const servicesDetailData: Record<string, IServicesDetail> = {
       heading: "Crafting Digital Experiences",
       description:
         "Our Web Development services, where creativity meets functionality deliver outstanding online experiences. We provide a versatile platform for building websites that are visually captivating, user-friendly, and highly customizable. From concept to launch and beyond, our Web Development services are tailored to your needs. Whether you're an entrepreneur, blogger, or a large corporation, We offers a scalable and cost-effective solution to bring your online vision to life.",
-      sectionOneImage: <WebDevelopmentHeroImage />,
+      sectionOneImage: "/images/services/database-recovery/hero-img.svg",
     },
     section2: {
       heading: "Why it is Important",
-      sectionTwoImage: <WebDevelopmentHeroImage />,
+      sectionTwoImage: "/images/services/database-recovery/hero-img.svg",
       subHeading1: {
         title: "Our Web Development Expertise:",
         list: [

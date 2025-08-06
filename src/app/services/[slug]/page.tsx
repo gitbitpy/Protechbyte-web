@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import servicesDetailData, { IServicesDetail } from "@/data/servicesDetailData";
 import HomeHeroBtn from "@/components/custom-ui-components/home-hero-Button/HomeHeroBtn";
-import Image from "next/image";
 
 const ServicePage = async ({
   params,
@@ -9,7 +9,6 @@ const ServicePage = async ({
   params: Promise<{ slug: string }>;
 }) => {
   const { slug } = await params;
-
   const serviceDetails: IServicesDetail | undefined = servicesDetailData[slug];
 
   if (!serviceDetails) {
@@ -17,73 +16,75 @@ const ServicePage = async ({
   }
 
   return (
-    <div className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]">
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-1/2">
-            <h1 className="mb-5 text-3xl font-bold leading-tight text-primary dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-              {serviceDetails?.section1.heading}
+    <main className="relative z-10 overflow-hidden bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute w-[600px] h-[600px] bg-blue-400 opacity-20 rounded-full blur-[200px] top-[-100px] left-[-150px]" />
+        <div className="absolute w-[400px] h-[400px] bg-purple-400 opacity-20 rounded-full blur-[200px] bottom-[-100px] right-[-100px]" />
+      </div>
+
+      {/* Section 1 */}
+      <section className="py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-primary dark:text-blue-400">
+              {serviceDetails.section1.heading}
             </h1>
-            <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark md:text-md">
-              {serviceDetails?.section1.description}
+            <p className="text-lg leading-8 text-gray-600 dark:text-gray-300 mb-8">
+              {serviceDetails.section1.description}
             </p>
-            <div className="flex justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+            <div className="flex flex-wrap gap-4">
               <HomeHeroBtn title="Let's Grow" />
               <HomeHeroBtn title="Explore" />
             </div>
           </div>
-          <div className="w-full px-4 lg:w-1/2">
-            {serviceDetails.section1.sectionOneImage}
+          <div className="relative w-full h-[400px]">
+            <Image
+              src={serviceDetails.section1.sectionOneImage}
+              alt="Hero Image"
+              fill
+              className="object-contain"
+            />
           </div>
         </div>
+      </section>
 
-        <div className="-mx-4 flex flex-wrap items-center pt-16 md:pt-20 lg:pt-28">
-          <div className="w-full px-4 lg:w-1/2">
-            <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
-              {/* <Image
-                src="/images/about/about-image.svg"
-                alt="about-image"
-                fill
-                className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
-              />
-              <Image
-                src="/images/about/about-image-dark.svg"
-                alt="about-image"
-                fill
-                className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
-              /> */}
-              {serviceDetails.section2.sectionTwoImage}
-            </div>
+      {/* Section 2 */}
+      <section className="py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
+          <div className="relative w-full h-[400px] order-1 md:order-1">
+            <Image
+              src={serviceDetails.section2.sectionTwoImage}
+              alt="Hero Image"
+              fill
+              className="object-contain"
+            />
           </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <h2 className="mb-4 text-3xl font-bold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-[45px]">
-              {serviceDetails?.section2.heading}
+          <div className="order-2 md:order-2 space-y-8">
+            <h2 className="text-3xl sm:text-4xl font-bold text-blue-700 dark:text-blue-400">
+              {serviceDetails.section2.heading}
             </h2>
-            <div className="mt-4">
-              <div className="mb-6">
-                <h3 className="text-xl font-semibold !leading-tight text-secondary dark:text-secondary">
-                  {serviceDetails?.section2.subHeading1.title}
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-secondary mb-2">
+                  {serviceDetails.section2.subHeading1.title}
                 </h3>
-                <ul className="list-disc pl-6 text-body-color dark:text-body-color-dark md:text-md">
-                  {serviceDetails?.section2.subHeading1.list.map(
+                <ul className="list-disc pl-5 space-y-2 text-base leading-7 text-gray-600 dark:text-gray-300">
+                  {serviceDetails.section2.subHeading1.list.map(
                     (item, index) => (
-                      <li key={index} className="text-md">
-                        {item}
-                      </li>
+                      <li key={index}>{item}</li>
                     )
                   )}
                 </ul>
               </div>
-              <div className="mb-6">
-                <h3 className="text-xl font-semibold !leading-tight text-secondary dark:text-secondary">
-                  {serviceDetails?.section2.subHeading2.title}
+              <div>
+                <h3 className="text-xl font-semibold text-secondary mb-2">
+                  {serviceDetails.section2.subHeading2.title}
                 </h3>
-                <ul className="list-disc pl-6 text-body-color dark:text-body-color-dark md:text-md">
-                  {serviceDetails?.section2.subHeading2.list.map(
+                <ul className="list-disc pl-5 space-y-2 text-base leading-7 text-gray-600 dark:text-gray-300">
+                  {serviceDetails.section2.subHeading2.list.map(
                     (item, index) => (
-                      <li key={index} className="text-md">
-                        {item}
-                      </li>
+                      <li key={index}>{item}</li>
                     )
                   )}
                 </ul>
@@ -91,44 +92,39 @@ const ServicePage = async ({
             </div>
           </div>
         </div>
+      </section>
 
-        <div className="-mx-4 flex flex-wrap items-center pt-16 md:pt-20 lg:pt-28">
-          <div className="w-full px-4 lg:w-1/2">
-            <h2 className="text-2xl font-semibold mx-auto w-full !leading-tight text-primary dark:text-white sm:text-4xl md:text-[45px]">
-              {serviceDetails?.section3.heading}
+      {/* Section 3 */}
+      <section className="py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
+          <div className="space-y-8">
+            <h2 className="text-3xl sm:text-4xl font-bold text-blue-700 dark:text-blue-400">
+              {serviceDetails.section3.heading}
             </h2>
-            <div className="mt-4">
-              {serviceDetails?.section3.items.map((item, index) => (
-                <div key={index} className="mb-6">
-                  <h3 className="text-xl font-semibold text-secondary dark:text-secondary">
+            <div className="space-y-6">
+              {serviceDetails.section3.items.map((item, index) => (
+                <div key={index}>
+                  <h3 className="text-xl font-semibold text-secondary mb-2">
                     {item.heading}
                   </h3>
-                  <p className="text-base text-body-color dark:text-body-color-dark md:text-md">
+                  <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
                     {item.description}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
-              <Image
-                src="/images/about/about-image.svg"
-                alt="about-image"
-                fill
-                className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
-              />
-              <Image
-                src="/images/about/about-image-dark.svg"
-                alt="about-image"
-                fill
-                className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
-              />
-            </div>
+          <div className="relative w-full h-[400px]">
+             <Image
+              src={serviceDetails.section2.sectionTwoImage}
+              alt="Hero Image"
+              fill
+              className="object-contain"
+            />
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
