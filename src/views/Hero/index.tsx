@@ -24,17 +24,22 @@ const Hero = () => {
           <path
             fill="url(#full-wave)"
             d="
-              M0,160 
-              C180,120 360,200 540,160 
-              C720,120 900,180 1080,160 
-              C1260,140 1440,160 1440,160 
-              L1440,320 
-              L0,320 
+              M0,230 
+              C180,200 360,300 790,240 
+              C1090,220 1000,320 1840,220 
+              C1360,180 1440,300 1940,240 
+              L1500,0 
+              L0,0 
               Z
             "
             repeatCount="indefinite"
           />
         </svg>
+
+        {/* C180,120 360,200 540,160  */}
+              {/* C720,120 900,180 1080,160  */}
+              {/* C1260,140 1440,160 1440,160  */}
+              {/* L1440,320  */}
 
         {/* 💫 Glowing blobs */}
         <div className="absolute top-[-150px] left-[-100px] w-[400px] h-[400px] bg-primary/20 dark:bg-primary/10 rounded-full blur-[150px] opacity-50" />

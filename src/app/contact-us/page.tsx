@@ -124,7 +124,7 @@ const ContactPage = () => {
               </svg>
             }
             title="Our Location"
-            value="3416, 8 street, nw Edmonton Alberta" 
+            value="3416, 8 street, nw Edmonton Alberta"
           />
           <ContactItem
             icon={
