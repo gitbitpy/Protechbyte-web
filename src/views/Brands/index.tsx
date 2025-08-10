@@ -6,9 +6,9 @@ const Brands = () => {
   return (
     <section className="relative bg-white dark:bg-gray-900 py-20 overflow-hidden">
       {/* Soft background gradient strip */}
-      {/* <div className="absolute inset-0 z-0 pointer-events-none">
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
-      </div> */}
+      </div>
 
       <div className="relative z-10 container max-w-7xl mx-auto px-4 md:px-6">
         {/* Heading */}

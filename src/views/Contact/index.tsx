@@ -10,9 +10,9 @@ const Contact = () => {
       className="relative bg-gray-50 dark:bg-gray-900 py-24 overflow-hidden"
     >
       {/* Horizontal gradient background strip */}
-      {/* <div className="absolute inset-0 z-0 pointer-events-none">
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
-      </div> */}
+      </div>
 
       <div className="container max-w-6xl mx-auto px-4 md:px-6 relative z-10">
         {/* Section Title */}
@@ -37,7 +37,7 @@ const Contact = () => {
                 <GiRotaryPhone className="text-3xl" />
               </div>
               <h4 className="text-xl font-semibold text-gray-900 dark:text-white mt-4">Phone</h4>
-              <p className="text-gray-600 dark:text-gray-300">+15875893798</p>
+              <p className="text-gray-600 dark:text-gray-300">+1 5875893798</p>
             </div>
           </div>
 

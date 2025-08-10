@@ -1,17 +1,50 @@
+"use client";
+
 import React from "react";
+import { useRouter } from "next/navigation";
 import styles from "./homeHeroBtn.module.css";
 
 interface HomeHeroBtnProps {
   title: string;
   ariaLabel?: string;
+  href?: string;
 }
 
-const HomeHeroBtn: React.FC<HomeHeroBtnProps> = ({ title, ariaLabel }) => {
+const HomeHeroBtn: React.FC<HomeHeroBtnProps> = ({
+  title,
+  ariaLabel,
+  href = "#",
+}) => {
+  const router = useRouter();
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+
+    if (href.includes("#")) {
+      const [path, hash] = href.split("#");
+
+      if (window.location.pathname === path) {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        router.push(path);
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 300);
+      }
+    } else {
+      router.push(href);
+    }
+  };
   return (
     <button
       className={styles["animated-button"]}
       aria-label={ariaLabel || title}
-      type="button"
+      onClick={handleClick}
     >
       <svg
         viewBox="0 0 24 24"

@@ -4,7 +4,7 @@ import servicesCardData from "@/data/servicesCardData";
 const Services = () => {
   return (
     <section
-      id="features"
+      id="services"
       className="relative bg-white dark:bg-gray-900 py-24 overflow-hidden"
     >
       {/* Horizontal gradient background strip */}

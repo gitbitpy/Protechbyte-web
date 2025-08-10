@@ -10,9 +10,9 @@ const OurVision = () => {
       className="relative bg-white dark:bg-gray-900 py-24 overflow-hidden"
     >
       {/* Reversed horizontal gradient background strip */}
-      {/* <div className="absolute inset-0 z-0 pointer-events-none">
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
-      </div> */}
+      </div>
 
       <div className="container max-w-7xl mx-auto px-4 md:px-6 relative z-10">
         {/* Centered Heading */}

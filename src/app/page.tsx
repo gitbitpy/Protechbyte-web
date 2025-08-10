@@ -19,3 +19,7 @@ export default function Home() {
     </>
   );
 }
+
+{/* <HomeHeroBtn title="Go to Services" href="/services" /> */}
+{/* <HomeHeroBtn title="Pricing Section" href="/services#pricing" /> */}
+{/* <HomeHeroBtn title="Scroll to Contact" href="#contact" /> */}
