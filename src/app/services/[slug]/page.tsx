@@ -16,7 +16,7 @@ const ServicePage = async ({
   }
 
   return (
-    <main className="relative z-10 overflow-hidden bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-100">
+    <main className="relative z-10 overflow-hidden bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
       {/* Gradient + Blob Layer */}
       {/* <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
@@ -29,10 +29,10 @@ const ServicePage = async ({
       </div>
 
       {/* Hero Section */}
-      <section className="relative py-24 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 z-0 pointer-events-none">
+      <section className="relative py-24 md:py-28">
+        {/* <div className="absolute inset-0 z-0 pointer-events-none">
           <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
-        </div>
+        </div> */}
         <svg
           className="absolute top-0 left-0 w-full h-full"
           xmlns="http://www.w3.org/2000/svg"
@@ -41,18 +41,8 @@ const ServicePage = async ({
         >
           <defs>
             <linearGradient id="full-wave" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop
-                offset="0%"
-                stopColor="#4A6CF7"
-                stopOpacity="0.1"
-                // className="stop-opacity-[0.3] dark:stop-opacity-[0.08]"
-              />
-              <stop
-                offset="100%"
-                stopColor="#A78BFA"
-                stopOpacity="0.08"
-                // className="stop-opacity-[0.08] dark:stop-opacity-[0.08]"
-              />
+              <stop offset="0%" stopColor="#4A6CF7" stopOpacity="0.1" />
+              <stop offset="100%" stopColor="#A78BFA" stopOpacity="0.08" />
             </linearGradient>
           </defs>
           <path
@@ -88,17 +78,6 @@ const ServicePage = async ({
             "
             repeatCount="indefinite"
           />
-          {/* <path
-            fill="url(#full-wave)"
-            d="
-              M0,290 
-              C1000,230 400,360 1700,240
-              L3000,220
-              C2000,180 2600,50 0,220 
-              Z
-            "
-            repeatCount="indefinite"
-          /> */}
         </svg>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center z-10">
@@ -128,139 +107,118 @@ const ServicePage = async ({
       </section>
 
       {/* Middle Section - Premium Infographic */}
-      <section className="py-24 md:py-28 relative">
-        <div className="absolute inset-0 z-0 pointer-events-none">
-          <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
+      <section className="relative py-28">
+        {/* Soft Blurred Backgrounds */}
+        <div className="absolute inset-0 -z-10 pointer-events-none">
+          <div className="absolute top-[-100px] left-[-100px] w-[500px] h-[500px] bg-blue-500/20 blur-[160px] rounded-full" />
+          <div className="absolute bottom-[-120px] right-[-80px] w-[400px] h-[400px] bg-purple-500/20 blur-[140px] rounded-full" />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
-          {/* Image */}
-          <div className="relative w-full h-[400px]">
-            <Image
-              src={serviceDetails.section2.sectionTwoImage}
-              alt="Why it's important"
-              fill
-              className="object-contain"
-            />
-          </div>
 
-          {/* Infographic Text */}
-          <div className="space-y-8">
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-blue-700 dark:text-blue-400">
-              {serviceDetails.section2.heading}
-            </h2>
+        <div className="max-w-7xl mx-auto px-6 sm:px-10">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-20 text-gray-900 dark:text-white leading-tight">
+            {serviceDetails.section2.heading}
+          </h2>
 
-            <div className="grid gap-6">
-              {[
-                serviceDetails.section2.subHeading1,
-                serviceDetails.section2.subHeading2,
-              ].map((sub, idx) => (
+          <div className="grid md:grid-cols-2 gap-12">
+            {[
+              serviceDetails.section2.subHeading1,
+              serviceDetails.section2.subHeading2,
+            ].map((sub, idx) => (
+              <div
+                key={idx}
+                className="relative p-8 rounded-3xl shadow-xl border bg-white/60 dark:bg-gray-900/60 
+            border-gray-200/50 dark:border-gray-700/50 backdrop-blur-md 
+            transition-all duration-300 hover:shadow-2xl hover:border-blue-400/40 dark:hover:border-blue-500/40 group"
+              >
+                {/* Number Badge */}
                 <div
-                  key={idx}
-                  className="relative flex items-start gap-4 p-6 rounded-2xl 
-                       bg-white/70 dark:bg-gray-800/40 backdrop-blur-md 
-                       shadow-lg border border-gray-100/60 dark:border-gray-700/50 
-                       transition-transform duration-300 hover:-translate-y-1"
+                  className="absolute -top-6 left-6 p-2 rounded-full bg-gradient-to-tr from-blue-600 to-purple-500 
+  text-white shadow-md border-2 border-white dark:border-gray-950"
                 >
-                  {/* Step Number - Half Outside */}
-                  <div
-                    className="absolute -left-7 top-1/2 -translate-y-1/2 flex-shrink-0 w-12 h-12 rounded-full 
-                            bg-gradient-to-r from-[#4A6CF7] to-[#A78BFA] text-white 
-                            flex items-center justify-center font-bold shadow-md"
+                  <div className="absolute -top-8 -left-8 w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 opacity-30 blur-2xl rounded-full" />
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
                   >
-                    {idx + 1}
-                  </div>
-
-                  {/* Text Content */}
-                  <div className="pl-6">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                      {sub.title}
-                    </h3>
-
-                    {/* Enhanced List */}
-                    <ul className="space-y-4">
-                      {sub.list.map((item, index) => (
-                        <li
-                          key={index}
-                          className="group flex items-start gap-4 transition-all duration-300"
-                        >
-                          {/* Bullet Icon */}
-                          <span
-                            className="mt-1 w-6 h-6 flex-shrink-0 rounded-full bg-gradient-to-br from-[#4A6CF7] to-[#A78BFA] 
-                                    text-white flex items-center justify-center text-sm font-bold shadow-md 
-                                    group-hover:scale-110 group-hover:rotate-6 transition-transform"
-                          >
-                            ✓
-                          </span>
-
-                          {/* List Item Text */}
-                          <div className="text-gray-700 dark:text-gray-300 text-base leading-relaxed group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors duration-300">
-                            {item}
-                          </div>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
                 </div>
-              ))}
-            </div>
+
+                <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 pl-2 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">
+                  {sub.title}
+                </h3>
+
+                <ul className="space-y-4">
+                  {sub.list.map((item, index) => (
+                    <li
+                      key={index}
+                      className="flex items-start gap-3 group-hover:translate-x-1 transition-all duration-300"
+                    >
+                      <span
+                        className="mt-1 w-6 h-6 flex-shrink-0 rounded-full bg-gradient-to-br from-[#4A6CF7] to-[#A78BFA] 
+                  text-white flex items-center justify-center text-sm font-bold shadow-md 
+                  group-hover:scale-110 group-hover:rotate-6 transition-transform"
+                      >
+                        ✓
+                      </span>
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                        {item}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Final Section */}
-      <section className="py-24 md:py-28 relative">
-        <div className="absolute inset-0 z-0 pointer-events-none">
-          <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
+      <section className="relative py-28">
+        {/* Soft Glows */}
+        <div className="absolute inset-0 -z-10 pointer-events-none">
+          <div className="absolute top-[-80px] left-[-100px] w-[500px] h-[500px] bg-blue-500/20 blur-[160px] rounded-full" />
+          <div className="absolute bottom-[-120px] right-[-80px] w-[400px] h-[400px] bg-purple-500/20 blur-[140px] rounded-full" />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
-          {/* Text */}
-          <div className="space-y-10">
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-              {serviceDetails.section3.heading}
-            </h2>
 
-            <div className="space-y-12">
-              {serviceDetails.section3.items.map((item, index) => {
-                const isEven = index % 2 === 0; // even = left, odd = right
-                return (
-                  <div
-                    key={index}
-                    className={`relative p-6 rounded-2xl bg-white/70 dark:bg-gray-900/50 shadow-lg backdrop-blur-sm 
-                         border border-gray-200/50 dark:border-gray-700/50 hover:shadow-xl transition-all duration-300
-                         ${isEven ? "pl-12" : "pr-12"}`}
-                  >
-                    {/* Number Circle */}
-                    <div
-                      className={`absolute top-1/2 -translate-y-1/2 w-14 h-14 rounded-full 
-                            bg-gradient-to-tr from-blue-600 to-primary text-white flex items-center justify-center 
-                            text-lg font-bold shadow-lg
-                            ${isEven ? "-left-7" : "-right-7"}`}
-                    >
-                      {index + 1}
-                    </div>
+        <div className="max-w-5xl mx-auto px-6 sm:px-10">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-24 text-gray-900 dark:text-white leading-tight">
+            {serviceDetails.section3.heading}
+          </h2>
 
-                    {/* Content */}
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+          <div className="relative border-l-2 border-blue-500/30 dark:border-blue-400/20 pl-4 space-y-16">
+            {serviceDetails.section3.items.map((item, index) => {
+              const isEven = index % 2 === 0;
+              return (
+                <div
+                  key={index}
+                  className={`relative group ml-4 md:ml-0 md:pl-10 
+              ${isEven ? "md:pr-10" : "md:pl-10"} 
+              transition-all`}
+                >
+                  {/* Glowing Dot Indicator */}
+                  <div className="absolute -left-[1.35rem] top-4 w-3.5 h-3.5 rounded-full bg-gradient-to-tr from-blue-600 to-purple-500 shadow-md" />
+
+                  <div className="bg-white/70 dark:bg-gray-900/60 border border-gray-200/40 dark:border-gray-700/40 backdrop-blur-md shadow-xl rounded-3xl px-6 py-8 transition hover:shadow-2xl transition-all duration-300 hover:shadow-2xl hover:border-blue-400/40 dark:hover:border-blue-500/40 group">
+                    <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                       {item.heading}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
                       {item.description}
                     </p>
                   </div>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Image */}
-          <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700">
-            <Image
-              src={serviceDetails.section1.sectionOneImage}
-              alt="Process image"
-              fill
-              className="object-cover hover:scale-105 transition-transform duration-500"
-            />
-            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" /> */}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

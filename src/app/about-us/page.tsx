@@ -94,7 +94,7 @@ const AboutPage = () => {
               technology solutions.
             </p>
             <div className="flex flex-wrap sm:flex-nowrap gap-4 sm:justify-center md:justify-start lg:justify-start">
-              <HomeHeroBtn title="Let's Grow" href="/contact-us#contact-form"/>
+              <HomeHeroBtn title="Let's Grow" href="/contact-us#contact-form" />
               <HomeHeroBtn title="Explore" href="/#services" />
             </div>
           </div>
