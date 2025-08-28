@@ -31,7 +31,7 @@ const servicesDetailData: Record<string, IServicesDetail> = {
       heading: "Robust Backup & Disaster Recovery Solutions",
       description:
         "We understand the critical importance of safeguarding your business data. Our Backup and Disaster Recovery solutions are designed to provide you with peace of mind, knowing that your data is secure and recoverable in any unforeseen event.",
-      sectionOneImage: "/images/services/database-recovery/hero-img.svg",
+      sectionOneImage: "/images/services/backup-and-disaster-recovery.png",
     },
     section2: {
       heading: "Why it is Important",
@@ -86,7 +86,7 @@ const servicesDetailData: Record<string, IServicesDetail> = {
       heading: "Elevate Your Business with Managed cloud Services",
       description:
         "We specialize in streamlining cloud operations, ensuring your business operates at its best in the digital landscape through Seamless Cloud Solutions for Optimal Performance.",
-      sectionOneImage: "/images/services/database-recovery/hero-img.svg",
+      sectionOneImage: "/images/services/cloud-managed-services.png",
     },
     section2: {
       heading: "Why it is Important",
@@ -199,7 +199,7 @@ const servicesDetailData: Record<string, IServicesDetail> = {
       heading: "Virtualization Solutions. Transforming Your IT Infrastructure",
       description:
         "Experience the future of IT infrastructure with our Server Virtualization services powered by VMware and Hyper-V. In an era where flexibility, scalability, and cost-efficiency are paramount, virtualization is the key to unlocking the full potential of your server resources.",
-      sectionOneImage: "/images/services/database-recovery/hero-img.svg",
+      sectionOneImage: "/images/services/virtualization.png",
     },
     section2: {
       heading: "Why it is Important",
@@ -256,7 +256,7 @@ const servicesDetailData: Record<string, IServicesDetail> = {
       heading: "Optimizing Your Digital Backbone With Excellence",
       description:
         "We specialize in maintaining the backbone of your digital infrastructure. In the fast-paced world of technology, your servers are the heart of your operations, and our expert team is here to ensure they beat reliably and efficiently.",
-      sectionOneImage: "/images/services/database-recovery/hero-img.svg",
+      sectionOneImage: "/images/services/server-administration.png",
     },
     section2: {
       heading: "Why it is Important",
@@ -313,7 +313,7 @@ const servicesDetailData: Record<string, IServicesDetail> = {
       heading: "Crafting Digital Experiences",
       description:
         "Our Web Development services, where creativity meets functionality deliver outstanding online experiences. We provide a versatile platform for building websites that are visually captivating, user-friendly, and highly customizable. From concept to launch and beyond, our Web Development services are tailored to your needs. Whether you're an entrepreneur, blogger, or a large corporation, We offers a scalable and cost-effective solution to bring your online vision to life.",
-      sectionOneImage: "/images/services/database-recovery/hero-img.svg",
+      sectionOneImage: "/images/services/web-development.png",
     },
     section2: {
       heading: "Why it is Important",
