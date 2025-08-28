@@ -136,8 +136,7 @@ const AboutPage = () => {
               </p>
               <p className="text-base leading-relaxed text-gray-600 dark:text-gray-300">
                 ProTechByte Consulting is a dynamic and forward-thinking IT
-                services company that specializes in delivering tailored
-                solutions to a diverse range of clients. Our passionate team of
+                services company that specializes in delivering a diverse range of solutions. Our passionate team of
                 technologists and innovators transforms challenges into
                 opportunities and aspirations into achievements.
               </p>
