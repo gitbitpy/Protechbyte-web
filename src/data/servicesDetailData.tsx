@@ -35,7 +35,7 @@ const servicesDetailData: Record<string, IServicesDetail> = {
     },
     section2: {
       heading: "Why it is Important",
-      sectionTwoImage: "/images/services/database-recovery/hero-img.svg",
+      sectionTwoImage: "/images/services/backup-and-disaster-recovery.png",
       subHeading1: {
         title: "Benefits of Backup and Disaster Recovery",
         list: [
@@ -90,7 +90,7 @@ const servicesDetailData: Record<string, IServicesDetail> = {
     },
     section2: {
       heading: "Why it is Important",
-      sectionTwoImage: "/images/services/database-recovery/hero-img.svg",
+      sectionTwoImage: "/images/services/cloud-managed-services.png",
       subHeading1: {
         title: "Benefits of Managed Cloud Services",
         list: [
@@ -141,11 +141,11 @@ const servicesDetailData: Record<string, IServicesDetail> = {
       heading: "Unlocking Seamless Storage Solutions.Your Data, Our Expertise",
       description:
         "We understand that in today's digital age, efficient storage solutions are not just a convenience but a necessity. Whether you're a business looking to streamline your data management or an individual seeking smart ways to declutter your life, we've got you covered. Whether you're a business seeking scalable storage options or an individual looking to simplify your digital life, our website has the perfect storage solution for you. Browse our products, explore our resources, and make clutter a thing of the past.",
-      sectionOneImage: "/images/services/database-recovery/hero-img.svg",
+      sectionOneImage: "/images/services/storage.png",
     },
     section2: {
       heading: "Why it is Important",
-      sectionTwoImage: "/images/services/database-recovery/hero-img.svg",
+      sectionTwoImage: "/images/services/storage.png",
       subHeading1: {
         title: "Explore Our Range of Storage Solutions:",
         list: [
@@ -203,7 +203,7 @@ const servicesDetailData: Record<string, IServicesDetail> = {
     },
     section2: {
       heading: "Why it is Important",
-      sectionTwoImage: "/images/services/database-recovery/hero-img.svg",
+      sectionTwoImage: "/images/services/virtualization.png",
       subHeading1: {
         title: "Our Virtualization Expertise:",
         list: [
@@ -260,7 +260,7 @@ const servicesDetailData: Record<string, IServicesDetail> = {
     },
     section2: {
       heading: "Why it is Important",
-      sectionTwoImage: "/images/services/database-recovery/hero-img.svg",
+      sectionTwoImage: "/images/services/server-administration.png",
       subHeading1: {
         title: "Explore Our Server Administration Expertise:",
         list: [
@@ -317,7 +317,7 @@ const servicesDetailData: Record<string, IServicesDetail> = {
     },
     section2: {
       heading: "Why it is Important",
-      sectionTwoImage: "/images/services/database-recovery/hero-img.svg",
+      sectionTwoImage: "/images/services/web-development.png",
       subHeading1: {
         title: "Our Web Development Expertise:",
         list: [
