@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Trigger Vercel Deploy Hook
         run: |
-          curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_bIzgSqm122GSOgwwhLNVObrN6gkC/OkFLKtPSpd'
+          curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_bIzgSqm122GSOgwwhLNVObrN6gkC/xoKIkmZjaW'
