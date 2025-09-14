@@ -132,7 +132,7 @@ const AboutPage = () => {
                 We are the architects of innovation, the stewards of technology,
                 and the partners in progress. With a relentless commitment to
                 excellence, we empower businesses with cutting-edge IT services,
-                helping them thrive in the digital age.
+                helping them thrive in this digital age.
               </p>
               <p className="text-base leading-relaxed text-gray-600 dark:text-gray-300">
                 ProTechByte Consulting is a dynamic and forward-thinking IT
