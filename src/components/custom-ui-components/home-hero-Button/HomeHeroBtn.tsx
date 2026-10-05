@@ -10,36 +10,47 @@ interface HomeHeroBtnProps {
   href?: string;
 }
 
+const scrollToHash = (hash: string) => {
+  if (!hash) return;
+
+  const element = document.getElementById(hash);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
+
 const HomeHeroBtn: React.FC<HomeHeroBtnProps> = ({
   title,
   ariaLabel,
   href = "#",
 }) => {
   const router = useRouter();
+
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
+    if (!href) {
+      return;
+    }
+
     if (href.includes("#")) {
-      const [path, hash] = href.split("#");
+      const [rawPath, rawHash] = href.split("#");
+      const path = rawPath || "/";
+      const hash = rawHash || "";
 
       if (window.location.pathname === path) {
-        const element = document.getElementById(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      } else {
-        router.push(path);
-        setTimeout(() => {
-          const element = document.getElementById(hash);
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-          }
-        }, 300);
+        scrollToHash(hash);
+        return;
       }
-    } else {
-      router.push(href);
+
+      const targetUrl = hash ? `${path}#${hash}` : path;
+      router.push(targetUrl);
+      return;
     }
+
+    router.push(href);
   };
+
   return (
     <button
       className={styles["animated-button"]}
