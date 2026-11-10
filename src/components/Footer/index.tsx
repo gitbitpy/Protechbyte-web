@@ -34,6 +34,14 @@ const Footer = () => {
                 alt="Protechbyte Logo"
                 width={160}
                 height={40}
+                className="dark:hidden"
+              />
+              <Image
+                src="/images/Protechbyte-Main-Logo-dark.svg"
+                alt="Protechbyte Logo"
+                width={160}
+                height={40}
+                className="hidden dark:block"
               />
             </Link>
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">

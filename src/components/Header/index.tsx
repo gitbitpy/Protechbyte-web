@@ -61,7 +61,14 @@ const Header = () => {
                   alt="logo"
                   width={140}
                   height={30}
-                  className="w-full"
+                  className="w-full dark:hidden"
+                />
+                <Image
+                  src="/images/Protechbyte-Main-Logo-dark.svg"
+                  alt="logo"
+                  width={140}
+                  height={30}
+                  className="hidden w-full dark:block"
                 />
               </Link>
             </div>
