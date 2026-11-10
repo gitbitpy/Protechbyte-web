@@ -15,18 +15,18 @@ const AboutPage = () => {
     <main className="relative z-10 overflow-hidden bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
       {/* Background Gradient Blobs */}
       {/* <div className="absolute inset-0 -z-10">
-        <div className="absolute w-[600px] h-[600px] bg-blue-400 opacity-20 rounded-full blur-[200px] top-[-100px] left-[-150px]" />
-        <div className="absolute w-[400px] h-[400px] bg-purple-400 opacity-20 rounded-full blur-[200px] bottom-[-100px] right-[-100px]" />
+        <div className="absolute w-[600px] h-[600px] bg-primary opacity-10 rounded-full blur-[200px] top-[-100px] left-[-150px]" />
+        <div className="absolute w-[400px] h-[400px] bg-secondary opacity-10 rounded-full blur-[200px] bottom-[-100px] right-[-100px]" />
       </div> */}
 
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
+        <div className="w-full h-full bg-gradient-to-l from-primary/10 via-secondary/10 to-transparent" />
       </div>
 
       {/* Hero Section */}
       <section className="pt-32 pb-28 space-y-12 relative">
         {/* <div className="absolute inset-0 z-0 pointer-events-none">
-          <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
+          <div className="w-full h-full bg-gradient-to-l from-primary/10 via-secondary/10 to-transparent" />
         </div> */}
         <svg
           className="absolute top-0 left-0 w-full h-full"
@@ -38,13 +38,13 @@ const AboutPage = () => {
             <linearGradient id="full-wave" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop
                 offset="0%"
-                stopColor="#4A6CF7"
+                stopColor="#383c93"
                 stopOpacity="0.1"
                 // className="stop-opacity-[0.3] dark:stop-opacity-[0.08]"
               />
               <stop
                 offset="100%"
-                stopColor="#A78BFA"
+                stopColor="#43a756"
                 stopOpacity="0.08"
                 // className="stop-opacity-[0.08] dark:stop-opacity-[0.08]"
               />
@@ -86,7 +86,7 @@ const AboutPage = () => {
         </svg>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-center md:text-left text-4xl sm:text-5xl font-extrabold tracking-tight mb-6 text-primary dark:text-blue-400">
+            <h1 className="text-center md:text-left text-4xl sm:text-5xl font-extrabold tracking-tight mb-6 text-primary">
               Discover ProTechByte
             </h1>
             <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 mb-8">
@@ -112,10 +112,10 @@ const AboutPage = () => {
       {/* Who Are We Section */}
       <section className="py-20">
         {/* <div className="absolute inset-0 z-0 pointer-events-none">
-          <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
+          <div className="w-full h-full bg-gradient-to-l from-primary/10 via-secondary/10 to-transparent" />
         </div> */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-3xl sm:text-4xl font-bold mb-16 text-primary dark:text-blue-400">
+          <h2 className="text-center text-3xl sm:text-4xl font-bold mb-16 text-primary">
             Who Are We
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -148,10 +148,10 @@ const AboutPage = () => {
       {/* Our Commitment Section */}
       <section className="py-20 relative">
         {/* <div className="absolute inset-0 z-0 pointer-events-none">
-          <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
+          <div className="w-full h-full bg-gradient-to-l from-primary/10 via-secondary/10 to-transparent" />
         </div> */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-3xl sm:text-4xl font-bold mb-16 text-primary dark:text-blue-400">
+          <h2 className="text-center text-3xl sm:text-4xl font-bold mb-16 text-primary">
             Our Commitment
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -179,7 +179,7 @@ const AboutPage = () => {
       {/* Testimonials Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-primary dark:text-blue-400">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-primary">
             What Our Users Say
           </h2>
           <p className="max-w-2xl mx-auto text-base leading-relaxed text-gray-600 dark:text-gray-300 mb-12">

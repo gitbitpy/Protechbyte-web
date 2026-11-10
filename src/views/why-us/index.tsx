@@ -39,7 +39,7 @@ const WhyUs = () => {
     >
       {/* Horizontal reverse gradient background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
+        <div className="w-full h-full bg-gradient-to-l from-primary/10 via-secondary/10 to-transparent" />
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
@@ -47,7 +47,7 @@ const WhyUs = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight">
             Why Choose <span className="text-primary">ProtechByte</span>?
-            <span className="block h-[6px] mx-auto mt-2 bg-gradient-to-r from-primary to-purple-400 w-24 rounded-full"></span>
+            <span className="block h-[6px] mx-auto mt-2 bg-gradient-to-r from-primary to-secondary w-24 rounded-full"></span>
           </h2>
           <p className="text-base font-normal text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
             We&apos;re not just a tech company — we&apos;re your strategic innovation

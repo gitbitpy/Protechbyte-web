@@ -20,7 +20,7 @@ const Footer = () => {
 
       {/* Gradient Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
+        <div className="w-full h-full bg-gradient-to-l from-primary/10 via-secondary/10 to-transparent" />
       </div>
 
       {/* Content */}

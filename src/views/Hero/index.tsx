@@ -7,11 +7,11 @@ const Hero = () => {
       className="relative min-h-screen bg-white dark:bg-gray-900 overflow-hidden flex items-center justify-center px-4 sm:px-6 lg:px-8"
     >
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
+        <div className="w-full h-full bg-gradient-to-l from-primary/10 via-secondary/10 to-transparent" />
       </div>
       {/* 🟣 Full Wavy Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        {/* <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" /> */}
+        {/* <div className="w-full h-full bg-gradient-to-l from-primary/10 via-secondary/10 to-transparent" /> */}
         <svg
           className="absolute top-0 left-0 w-full h-full"
           xmlns="http://www.w3.org/2000/svg"
@@ -22,13 +22,13 @@ const Hero = () => {
             <linearGradient id="full-wave" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop
                 offset="0%"
-                stopColor="#4A6CF7"
+                stopColor="#383c93"
                 stopOpacity="0.1"
                 // className="stop-opacity-[0.3] dark:stop-opacity-[0.08]"
               />
               <stop
                 offset="100%"
-                stopColor="#A78BFA"
+                stopColor="#43a756"
                 stopOpacity="0.08"
                 // className="stop-opacity-[0.08] dark:stop-opacity-[0.08]"
               />
@@ -96,14 +96,14 @@ const Hero = () => {
 
         {/* 💫 Glowing blobs */}
         <div className="absolute top-[-150px] left-[-100px] w-[400px] h-[400px] bg-primary/20 dark:bg-primary/10 rounded-full blur-[150px] opacity-50" />
-        <div className="absolute bottom-[-150px] right-[-100px] w-[400px] h-[400px] bg-purple-500/20 dark:bg-purple-500/10 rounded-full blur-[150px] opacity-50" />
+        <div className="absolute bottom-[-150px] right-[-100px] w-[400px] h-[400px] bg-secondary/20 dark:bg-secondary/10 rounded-full blur-[150px] opacity-50" />
       </div>
 
       {/* 📌 Hero Content */}
       <div className="relative z-10 text-center max-w-3xl">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-6">
           Catalyzing Growth Through <br className="hidden sm:block" />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-500">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
             Cloud Excellence
           </span>
         </h1>

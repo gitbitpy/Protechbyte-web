@@ -25,7 +25,7 @@ const SingleService = ({ service }: { service: Service }) => {
       <CardActionBtn title="Learn More" urlLink={urlLink} />
 
       {/* Elegant Border Hover Line */}
-      <span className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-primary to-purple-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 rounded-full" />
+      <span className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-primary to-secondary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 rounded-full" />
     </div>
   );
 };

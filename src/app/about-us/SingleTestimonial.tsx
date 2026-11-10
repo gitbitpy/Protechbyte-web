@@ -15,7 +15,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
     <div className="w-full">
       <div className="relative group p-8 bg-white/80 dark:bg-gray-800/90 backdrop-blur-md rounded-2xl shadow-md hover:shadow-2xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
         {/* Quote Icon */}
-        <FaQuoteLeft className="absolute top-6 left-6 text-blue-500 opacity-10 text-6xl" />
+        <FaQuoteLeft className="absolute top-6 left-6 text-primary opacity-10 text-6xl" />
 
         {/* Content */}
         <p className="text-gray-700 dark:text-gray-200 text-base leading-relaxed italic z-10 relative mb-6">

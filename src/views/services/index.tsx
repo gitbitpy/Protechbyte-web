@@ -9,7 +9,7 @@ const Services = () => {
     >
       {/* Horizontal gradient background strip */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="w-full h-full bg-gradient-to-l from-[#4A6CF7]/10 via-[#A78BFA]/10 to-transparent" />
+        <div className="w-full h-full bg-gradient-to-l from-primary/10 via-secondary/10 to-transparent" />
       </div>
 
       <div className="relative z-10 container max-w-7xl mx-auto px-4 md:px-6">
@@ -17,7 +17,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white relative inline-block mb-4">
             Our Services
-            <span className="block h-[6px] mt-2 mx-auto bg-gradient-to-r from-primary to-purple-400 w-24 rounded-full" />
+            <span className="block h-[6px] mt-2 mx-auto bg-gradient-to-r from-primary to-secondary w-24 rounded-full" />
           </h2>
           <p className="text-base font-normal text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Our seasoned team of technical support specialists has been
@@ -32,7 +32,7 @@ const Services = () => {
           {servicesCardData.map((service) => (
             <div
               key={service.id}
-              className="relative rounded-2xl p-[1px] bg-gradient-to-r from-primary/30 to-purple-500/30 hover:from-primary/50 hover:to-purple-500/50 transition-all duration-300"
+              className="relative rounded-2xl p-[1px] bg-gradient-to-r from-primary/30 to-secondary/30 hover:from-primary/50 hover:to-secondary/50 transition-all duration-300"
             >
               {/* 🌟 Decorative SVG background */}
               <svg
@@ -47,8 +47,8 @@ const Services = () => {
                 />
                 <defs>
                   <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#4A6CF7" />
-                    <stop offset="100%" stopColor="#A78BFA" />
+                    <stop offset="0%" stopColor="#383c93" />
+                    <stop offset="100%" stopColor="#43a756" />
                   </linearGradient>
                 </defs>
               </svg>
